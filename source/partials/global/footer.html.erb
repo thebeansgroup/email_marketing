@@ -1,0 +1,56 @@
+<table class="row header">
+  <tr>
+    <td class="center" align="center">
+      <center>
+
+        <table class="container">
+          <tr>
+            <td class="wrapper last">
+                <p><img src="<%= image_path('footer__sb-logo.jpg') %>" class="center" ></p>
+
+                <p>
+                  <center><%= t('footer.reason') %></center>
+                </p>
+
+                <p>
+                  <center>
+                    <%= t('footer.unsubscribe.text', 
+                            newsletter: link_to(t("footer.unsubscribe.newsletter"), t("footer.unsubscribe.newsletter_href")),
+                            preferences: link_to(t("footer.unsubscribe.preferences"), t("footer.unsubscribe.preferences_href"))
+                        ) 
+                    %>
+                  </center>
+                </p>
+
+                <p>
+                  <center><%= t('footer.privacy.important') %> <%= link_to(t("footer.privacy.policy"), t("footer.privacy.policy_href")) %></center>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="wrapper last">
+              <table class="five columns">
+                <tr>
+                  <td class="six sub-columns">
+                    <a href="<%= current_page.data.facebook_href %>"><img src="<%= image_path('footer__facebook.jpg') %>" class="center" ></a>
+                  </td>
+                  <td class="six sub-columns">
+                    <a href="<%= current_page.data.twitter_href %>"><img src="<%= image_path('footer__twitter.jpg') %>" class="center" ></a>
+                  </td>
+
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="wrapper last">
+                <p><center><%= t('footer.office') %></center></p>
+            </td>
+          </tr>
+        </table>
+
+      </center>
+    </td>
+  </tr>
+</table>
