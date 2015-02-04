@@ -38,6 +38,7 @@
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  activate :i18n
 end
 
 # Methods defined in the helpers block are available in templates
@@ -82,6 +83,7 @@ end
 # Build-specific configuration
 configure :build do
   activate :inline_css
+  activate :i18n
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
