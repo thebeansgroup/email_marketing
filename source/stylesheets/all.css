@@ -8,6 +8,9 @@ body, .body {
   background-color: #EFF0EB;
 }
 
+.main-content {
+  background-color: #fff;
+}
 
 .txt-right { text-align: right; }
 .txt-left { text-align: left; }
