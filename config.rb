@@ -24,6 +24,8 @@
 #   page "/admin/*"
 # end
 
+page "/partials/*", layout: false
+
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
@@ -64,15 +66,23 @@ class InlineCSS < Middleman::Extension
   def initialize(app, options_hash={}, &block)
     super
     app.after_build do |builder|
-      Dir.glob(build_dir + File::SEPARATOR + '*.html').each do |source_file|
-        premailer = Premailer.new(source_file, verbose: true)
-        destination_file = source_file.gsub('.html', '-inline.html')
+      
+      Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
+        
+        premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: true)
+        destination_file = source_file.gsub('.html', '--inline-css.html')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
 
         File.open(destination_file, "w") do |content|
           content.puts premailer.to_inline_css
         end
+
+        puts '=========================================================================='
+        # File.delete( Dir.getwd + File::SEPARATOR + source_file)
+        puts '=========================================================================='
+
+
       end
     end
   end

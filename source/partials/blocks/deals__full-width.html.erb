@@ -1,16 +1,15 @@
 <table class="row group">
   <tr>
-    <% 2.times do |n| %>
-      <td class="wrapper <%= n == 1 ? "last" : "" %>">
-        <table class="six columns">
+      <td class="wrapper last">
+        <table class="twelve columns">
           <tr>
-            <td class="<%= n == 0 ? "left" : "right" %>-text-pad">
+            <td class="text-pad">
 
             <!-- Deal block  -->
 
             <table class="row">
               <tr>
-                <td><img width="270" height="135" src="http://placehold.it/640x320"></td>
+                <td><img width="640" height="320" src="http://placehold.it/640x320"></td>
               </tr>
             </table>
             
@@ -23,7 +22,7 @@
 
                 <td class="five sub-columns last">
 
-                  <table class="tiny-button">
+                  <table class="tiny-button success">
                     <tr>
                       <td>
                         <a href="#">Button Label</a>
@@ -45,6 +44,5 @@
           </tr>
         </table>
       </td>
-    <% end %>
   </tr>
 </table>

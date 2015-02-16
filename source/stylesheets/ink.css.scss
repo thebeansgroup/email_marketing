@@ -1,3 +1,6 @@
+$margin: 10px;
+$gutter: 30px;
+
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
 **********************************************/
@@ -59,7 +62,7 @@ a img {
 }
 
 p {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 $margin*2;
 }
 
 table {
@@ -105,6 +108,9 @@ table.row {
   padding: 0px; 
   width: 100%;
   position: relative;
+
+  &.group { padding: $margin*2 0 0; }
+  &.last { padding-bottom: $margin*4; }
 }
 
 table.container table.row {
@@ -112,8 +118,11 @@ table.container table.row {
 }
 
 td.wrapper {
-  padding: 10px 20px 0px 0px;
+  padding: $margin $gutter - 11px 0px 0px;
   position: relative;
+
+  &.collapse-right { padding-right: 0; }
+  &.collapse-left  { padding-left: 0; }
 }
 
 table.columns,
@@ -123,14 +132,14 @@ table.column {
 
 table.columns td,
 table.column td {
-  padding: 0px 0px 10px; 
+  padding: 0px 0px $margin; 
 }
 
 table.columns td.sub-columns,
 table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
-  padding-right: 10px;
+  padding-right: $gutter;
 }
 
 td.sub-column, td.sub-columns {
@@ -154,6 +163,10 @@ table.nine { width: 430px; }
 table.ten { width: 480px; }
 table.eleven { width: 530px; }
 table.twelve { width: 580px; }
+
+.wrapper.collapse-right {
+  & > .six { width: 300px; }
+}
 
 table.one center { min-width: 30px; }
 table.two center { min-width: 80px; }
@@ -226,54 +239,55 @@ td.expander {
 
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 10px;
+  padding-left: $gutter;
 }
 
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 10px;
+  padding-right: $gutter;
 }
 
 /* Block Grid */
+$block-grid-width: 580px;
 
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: $block-grid-width;
 }
 
 .block-grid td {
   display: inline-block;
-  padding:10px;
+  padding:$gutter $gutter*0.75 $gutter $gutter;
 }
 
 .two-up td {
-  width:270px;
+  width:220px;
 }
 
 .three-up td {
-  width:173px;
+  width:130px;
 }
 
 .four-up td {
-  width:125px;
+  width:90px;
 }
 
 .five-up td {
-  width:96px;
+  width:63px;
 }
 
 .six-up td {
-  width:76px;
+  width:40px;
 }
 
 .seven-up td {
@@ -318,9 +332,9 @@ img.center {
 /* Typography */
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
-  font-weight: normal; 
+  color: #777;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+  font-weight: 200; 
   padding:0; 
   margin: 0;
   text-align: left; 
@@ -328,28 +342,41 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #222;
   word-break: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.title-margin {
+  padding-bottom: $margin*2;
 }
 
 h1 {font-size: 40px;}
 h2 {font-size: 36px;}
-h3 {font-size: 32px;}
-h4 {font-size: 28px;}
-h5 {font-size: 24px;}
-h6 {font-size: 20px;}
+h3,
+h4,
+h5 {font-size: 16px;}
+h6 {font-size: 16px;}
 body, table.body, p, td {font-size: 14px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
   font-size: 18px;
-  line-height:21px;
+  line-height:26px;
+}
+
+p.sign-off {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
 }
 
 p { 
-  margin-bottom: 10px;
+  margin-bottom: $margin*2;
 }
 
 small {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 a {
@@ -414,6 +441,8 @@ h6 a:visited {
 
 /* Buttons */
 
+$button-color: #222;
+
 table.button,
 table.tiny-button,
 table.small-button,
@@ -431,10 +460,18 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #2284a1;
-  color: #ffffff;
+  background: transparent;
+  border: 3px solid $button-color;
+  color: $button-color;
   padding: 8px 0;
+
+  .icon {
+    clear: none;
+    float: none;
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: -1px;
+  }
 }
 
 table.tiny-button td {
@@ -461,13 +498,12 @@ table.large-button td a {
   font-weight: bold;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  color: #ffffff;
+  color: $button-color;
   font-size: 16px;
 }
 
 table.tiny-button td a {
   font-size: 12px;
-  font-weight: normal;
 }
 
 table.small-button td a {
@@ -491,7 +527,7 @@ table.button:active td {
 table.button:hover td a,
 table.button:visited td a,
 table.button:active td a {
-  color: #fff !important;
+  color: #90D231 !important;
 }
 
 table.button:hover td,
@@ -499,7 +535,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2795b6 !important;
+  background: transparent !important;
 }
 
 table.button:hover td a,
@@ -517,7 +553,7 @@ table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
 table.large-button td a:visited {
-  color: #ffffff !important; 
+  color: #90D231 !important; 
 }
 
 table.secondary td {
@@ -541,9 +577,32 @@ table.secondary:active td a {
   color: #555 !important;
 }
 
+table.white td a,
+table.white:hover td a,
+table.white td a:visited,
+table.white:active td a {
+  color: #fff !important;
+}
+
+table.white td {
+  border-color: #FFF;
+}
+
+table.white:hover td {
+  border-color: #222 !important;
+}
+
+
+table.success td a,
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a {
+  color: #fff !important;
+}
+
 table.success td {
-  background: #5da423;
-  border-color: #457a1a;
+  background: #009E49;
+  border-color: #009E49;
 }
 
 table.success:hover td {
@@ -669,12 +728,12 @@ body.outlook p {
 
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    padding-left: $gutter !important;
   }
 
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    padding-right: $gutter !important;
   }
 
   table[class="body"] .hide-for-small,
