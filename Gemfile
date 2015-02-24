@@ -15,3 +15,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem "premailer"
 gem "hpricot"
+gem 'middleman-minify-html'

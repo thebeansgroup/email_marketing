@@ -45,7 +45,7 @@ img {
   outline:none; 
   text-decoration:none; 
   -ms-interpolation-mode: bicubic;
-  width: auto;
+  // width: auto;
   max-width: 100%; 
   float: left; 
   clear: both; 
@@ -123,6 +123,7 @@ td.wrapper {
 
   &.collapse-right { padding-right: 0; }
   &.collapse-left  { padding-left: 0; }
+  &.collapse-top  { padding-top: 0; }
 }
 
 table.columns,
@@ -326,7 +327,10 @@ img.center {
 
 .show-for-small,
 .hide-for-desktop {
-  display: none;
+  // display: none !important;
+  display: block;
+  max-height:0px;overflow:hidden;
+  max-width: 0px;
 }
 
 /* Typography */
@@ -744,5 +748,11 @@ body.outlook p {
   table[class="body"] .show-for-small,
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
+    max-height: none !important;
+    overflow: inherit !important;
+    max-width: none !important;
+
+    &.block { display: block !important; }
+    &.cell { display: table-cell !important; }
   }
 }

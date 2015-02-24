@@ -2,7 +2,7 @@
   * Header
   */
 
-td.header {
+table.header {
   padding-top: 40px;
   padding-bottom: 30px;
   background-color: #6CD45B;
@@ -30,7 +30,7 @@ td.header {
   * Deals
   */
 
-td.header.deals {
+table.header.deals {
   background-color: #FC8907;
 }
 
@@ -39,7 +39,7 @@ td.header.deals {
   * Campaign
   */
 
-td.header.campaign {
+table.header.campaign {
   padding: 0;
 }
 
@@ -48,7 +48,7 @@ td.header.campaign {
   * Campaign
   */
 
-td.header.alert {
+table.header.alert {
   padding: 0;
   background-color: #FFF;
   h1, h2, h3, h4, h5, h6, p, td {  

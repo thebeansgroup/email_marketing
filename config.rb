@@ -69,7 +69,7 @@ class InlineCSS < Middleman::Extension
       
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
         
-        premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: true)
+        premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false)
         destination_file = source_file.gsub('.html', '--inline-css.html')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
@@ -92,6 +92,7 @@ end
 
 # Build-specific configuration
 configure :build do
+  # activate :minify_html, remove_http_protocol: false
   activate :inline_css
   activate :i18n
   # For example, change the Compass output style for deployment

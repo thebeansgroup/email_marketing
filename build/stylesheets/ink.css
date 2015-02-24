@@ -40,7 +40,6 @@ img {
   outline: none;
   text-decoration: none;
   -ms-interpolation-mode: bicubic;
-  width: auto;
   max-width: 100%;
   float: left;
   clear: both;
@@ -123,305 +122,308 @@ td.wrapper {
   /* line 125, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   td.wrapper.collapse-left {
     padding-left: 0; }
+  /* line 126, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  td.wrapper.collapse-top {
+    padding-top: 0; }
 
-/* line 128, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 129, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.columns,
 table.column {
   margin: 0 auto; }
 
-/* line 133, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 134, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.columns td,
 table.column td {
   padding: 0px 0px 10px; }
 
-/* line 138, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 139, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.columns td.sub-columns,
 table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
   padding-right: 30px; }
 
-/* line 145, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 146, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.sub-column, td.sub-columns {
   min-width: 0px; }
 
-/* line 149, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 150, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.row td.last,
 table.container td.last {
   padding-right: 0px; }
 
-/* line 154, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 155, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.one {
   width: 30px; }
 
-/* line 155, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 156, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.two {
   width: 80px; }
 
-/* line 156, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 157, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.three {
   width: 130px; }
 
-/* line 157, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 158, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.four {
   width: 180px; }
 
-/* line 158, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 159, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.five {
   width: 230px; }
 
-/* line 159, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 160, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.six {
   width: 280px; }
 
-/* line 160, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 161, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.seven {
   width: 330px; }
 
-/* line 161, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 162, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.eight {
   width: 380px; }
 
-/* line 162, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 163, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.nine {
   width: 430px; }
 
-/* line 163, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 164, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.ten {
   width: 480px; }
 
-/* line 164, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 165, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.eleven {
   width: 530px; }
 
-/* line 165, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 166, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.twelve {
   width: 580px; }
 
-/* line 168, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 169, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .wrapper.collapse-right > .six {
   width: 300px; }
 
-/* line 171, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 172, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.one center {
   min-width: 30px; }
 
-/* line 172, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 173, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.two center {
   min-width: 80px; }
 
-/* line 173, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 174, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.three center {
   min-width: 130px; }
 
-/* line 174, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 175, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.four center {
   min-width: 180px; }
 
-/* line 175, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 176, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.five center {
   min-width: 230px; }
 
-/* line 176, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 177, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.six center {
   min-width: 280px; }
 
-/* line 177, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 178, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.seven center {
   min-width: 330px; }
 
-/* line 178, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 179, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.eight center {
   min-width: 380px; }
 
-/* line 179, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 180, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.nine center {
   min-width: 430px; }
 
-/* line 180, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 181, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.ten center {
   min-width: 480px; }
 
-/* line 181, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 182, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.eleven center {
   min-width: 530px; }
 
-/* line 182, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 183, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.twelve center {
   min-width: 580px; }
 
-/* line 184, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 185, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.one .panel center {
   min-width: 10px; }
 
-/* line 185, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 186, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.two .panel center {
   min-width: 60px; }
 
-/* line 186, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 187, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.three .panel center {
   min-width: 110px; }
 
-/* line 187, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 188, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.four .panel center {
   min-width: 160px; }
 
-/* line 188, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 189, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.five .panel center {
   min-width: 210px; }
 
-/* line 189, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 190, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.six .panel center {
   min-width: 260px; }
 
-/* line 190, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 191, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.seven .panel center {
   min-width: 310px; }
 
-/* line 191, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 192, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.eight .panel center {
   min-width: 360px; }
 
-/* line 192, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 193, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.nine .panel center {
   min-width: 410px; }
 
-/* line 193, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 194, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.ten .panel center {
   min-width: 460px; }
 
-/* line 194, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 195, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.eleven .panel center {
   min-width: 510px; }
 
-/* line 195, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 196, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.twelve .panel center {
   min-width: 560px; }
 
-/* line 197, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 198, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.one,
 .body .column td.one {
   width: 8.333333%; }
 
-/* line 199, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 200, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.two,
 .body .column td.two {
   width: 16.666666%; }
 
-/* line 201, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 202, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.three,
 .body .column td.three {
   width: 25%; }
 
-/* line 203, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 204, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.four,
 .body .column td.four {
   width: 33.333333%; }
 
-/* line 205, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 206, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.five,
 .body .column td.five {
   width: 41.666666%; }
 
-/* line 207, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 208, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.six,
 .body .column td.six {
   width: 50%; }
 
-/* line 209, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 210, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.seven,
 .body .column td.seven {
   width: 58.333333%; }
 
-/* line 211, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 212, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.eight,
 .body .column td.eight {
   width: 66.666666%; }
 
-/* line 213, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 214, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.nine,
 .body .column td.nine {
   width: 75%; }
 
-/* line 215, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 216, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.ten,
 .body .column td.ten {
   width: 83.333333%; }
 
-/* line 217, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 218, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.eleven,
 .body .column td.eleven {
   width: 91.666666%; }
 
-/* line 219, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 220, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .body .columns td.twelve,
 .body .column td.twelve {
   width: 100%; }
 
-/* line 222, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 223, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-one {
   padding-left: 50px; }
 
-/* line 223, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 224, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-two {
   padding-left: 100px; }
 
-/* line 224, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 225, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-three {
   padding-left: 150px; }
 
-/* line 225, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 226, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-four {
   padding-left: 200px; }
 
-/* line 226, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 227, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-five {
   padding-left: 250px; }
 
-/* line 227, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 228, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-six {
   padding-left: 300px; }
 
-/* line 228, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 229, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-seven {
   padding-left: 350px; }
 
-/* line 229, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 230, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-eight {
   padding-left: 400px; }
 
-/* line 230, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 231, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-nine {
   padding-left: 450px; }
 
-/* line 231, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 232, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-ten {
   padding-left: 500px; }
 
-/* line 232, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 233, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.offset-by-eleven {
   padding-left: 550px; }
 
-/* line 234, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 235, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 td.expander {
   visibility: hidden;
   width: 0px;
   padding: 0 !important; }
 
-/* line 240, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 241, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.columns .text-pad,
 table.column .text-pad {
   padding-left: 30px;
   padding-right: 30px; }
 
-/* line 246, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 247, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
   padding-left: 30px; }
 
-/* line 253, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 254, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
@@ -429,50 +431,50 @@ table.column .text-pad-right {
   padding-right: 30px; }
 
 /* Block Grid */
-/* line 263, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 264, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .block-grid {
   width: 100%;
   max-width: 580px; }
 
-/* line 268, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 269, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .block-grid td {
   display: inline-block;
   padding: 30px 22.5px 30px 30px; }
 
-/* line 273, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 274, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .two-up td {
   width: 220px; }
 
-/* line 277, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 278, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .three-up td {
   width: 130px; }
 
-/* line 281, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 282, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .four-up td {
   width: 90px; }
 
-/* line 285, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 286, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .five-up td {
   width: 63px; }
 
-/* line 289, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 290, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .six-up td {
   width: 40px; }
 
-/* line 293, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 294, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .seven-up td {
   width: 62px; }
 
-/* line 297, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 298, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .eight-up td {
   width: 52px; }
 
 /* Alignment & Visibility Classes */
-/* line 303, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 304, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.center, td.center {
   text-align: center; }
 
-/* line 307, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 308, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h1.center,
 h2.center,
 h3.center,
@@ -481,24 +483,27 @@ h5.center,
 h6.center {
   text-align: center; }
 
-/* line 316, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 317, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 span.center {
   display: block;
   width: 100%;
   text-align: center; }
 
-/* line 322, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 323, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 img.center {
   margin: 0 auto;
   float: none; }
 
-/* line 327, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 328, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .show-for-small,
 .hide-for-desktop {
-  display: none; }
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  max-width: 0px; }
 
 /* Typography */
-/* line 334, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 338, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
   color: #777;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -508,77 +513,77 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
   text-align: left;
   line-height: 1.3; }
 
-/* line 344, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 348, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   word-break: normal;
   font-weight: normal;
   text-transform: uppercase; }
 
-/* line 351, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 355, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .title-margin {
   padding-bottom: 20px; }
 
-/* line 355, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 359, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h1 {
   font-size: 40px; }
 
-/* line 356, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 360, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h2 {
   font-size: 36px; }
 
-/* line 357, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 361, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h3,
 h4,
 h5 {
   font-size: 16px; }
 
-/* line 360, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 364, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h6 {
   font-size: 16px; }
 
-/* line 361, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 365, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 body, table.body, p, td {
   font-size: 14px;
   line-height: 19px; }
 
-/* line 363, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 367, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 p.lead, p.lede, p.leed {
   font-size: 18px;
   line-height: 26px; }
 
-/* line 368, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 372, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 p.sign-off {
   font-size: 20px;
   font-weight: bold;
   color: #222; }
 
-/* line 374, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 378, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 p {
   margin-bottom: 20px; }
 
-/* line 378, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 382, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 small {
   font-size: 12px; }
 
-/* line 382, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 386, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 a {
   color: #2ba6cb;
   text-decoration: none; }
 
-/* line 387, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 391, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 a:hover {
   color: #2795b6 !important; }
 
-/* line 391, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 395, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 a:active {
   color: #2795b6 !important; }
 
-/* line 395, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 399, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 a:visited {
   color: #2ba6cb !important; }
 
-/* line 399, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 403, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -587,7 +592,7 @@ h5 a,
 h6 a {
   color: #2ba6cb; }
 
-/* line 408, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 412, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h1 a:active,
 h2 a:active,
 h3 a:active,
@@ -596,7 +601,7 @@ h5 a:active,
 h6 a:active {
   color: #2ba6cb !important; }
 
-/* line 417, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 421, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -606,22 +611,22 @@ h6 a:visited {
   color: #2ba6cb !important; }
 
 /* Panels */
-/* line 428, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 432, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
   padding: 10px !important; }
 
-/* line 434, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 438, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .sub-grid table {
   width: 100%; }
 
-/* line 438, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 442, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 .sub-grid td.sub-columns {
   padding-bottom: 0; }
 
 /* Buttons */
-/* line 446, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 450, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button,
 table.tiny-button,
 table.small-button,
@@ -630,7 +635,7 @@ table.large-button {
   width: 100%;
   overflow: hidden; }
 
-/* line 455, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 459, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button td,
 table.tiny-button td,
 table.small-button td,
@@ -643,7 +648,7 @@ table.large-button td {
   border: 3px solid #222;
   color: #222;
   padding: 8px 0; }
-  /* line 468, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 472, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table.button td .icon,
   table.tiny-button td .icon,
   table.small-button td .icon,
@@ -655,23 +660,23 @@ table.large-button td {
     margin-right: 5px;
     margin-bottom: -1px; }
 
-/* line 477, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 481, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.tiny-button td {
   padding: 5px 0 4px; }
 
-/* line 481, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 485, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.small-button td {
   padding: 8px 0 7px; }
 
-/* line 485, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 489, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.medium-button td {
   padding: 12px 0 10px; }
 
-/* line 489, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 493, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.large-button td {
   padding: 21px 0 18px; }
 
-/* line 493, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 497, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button td a,
 table.tiny-button td a,
 table.small-button td a,
@@ -683,35 +688,35 @@ table.large-button td a {
   color: #222;
   font-size: 16px; }
 
-/* line 505, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 509, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.tiny-button td a {
   font-size: 12px; }
 
-/* line 509, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 513, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.small-button td a {
   font-size: 16px; }
 
-/* line 513, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 517, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.medium-button td a {
   font-size: 20px; }
 
-/* line 517, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 521, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.large-button td a {
   font-size: 24px; }
 
-/* line 521, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 525, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
   background: #2795b6 !important; }
 
-/* line 527, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 531, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button:hover td a,
 table.button:visited td a,
 table.button:active td a {
   color: #90D231 !important; }
 
-/* line 533, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 537, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button:hover td,
 table.tiny-button:hover td,
 table.small-button:hover td,
@@ -719,7 +724,7 @@ table.medium-button:hover td,
 table.large-button:hover td {
   background: transparent !important; }
 
-/* line 541, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 545, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.button:hover td a,
 table.button:active td a,
 table.button td a:visited,
@@ -737,110 +742,110 @@ table.large-button:active td a,
 table.large-button td a:visited {
   color: #90D231 !important; }
 
-/* line 559, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 563, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.secondary td {
   background: #e9e9e9;
   border-color: #d0d0d0;
   color: #555; }
 
-/* line 565, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 569, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.secondary td a {
   color: #555; }
 
-/* line 569, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 573, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.secondary:hover td {
   background: #d0d0d0 !important;
   color: #555; }
 
-/* line 574, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 578, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.secondary:hover td a,
 table.secondary td a:visited,
 table.secondary:active td a {
   color: #555 !important; }
 
-/* line 580, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 584, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.white td a,
 table.white:hover td a,
 table.white td a:visited,
 table.white:active td a {
   color: #fff !important; }
 
-/* line 587, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 591, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.white td {
   border-color: #FFF; }
 
-/* line 591, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 595, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.white:hover td {
   border-color: #222 !important; }
 
-/* line 596, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 600, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.success td a,
 table.success:hover td a,
 table.success td a:visited,
 table.success:active td a {
   color: #fff !important; }
 
-/* line 603, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 607, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.success td {
   background: #009E49;
   border-color: #009E49; }
 
-/* line 608, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 612, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.success:hover td {
   background: #457a1a !important; }
 
-/* line 612, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 616, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.alert td {
   background: #c60f13;
   border-color: #970b0e; }
 
-/* line 617, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 621, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.alert:hover td {
   background: #970b0e !important; }
 
-/* line 621, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 625, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.radius td {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 627, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 631, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 table.round td {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px; }
 
 /* Outlook First */
-/* line 635, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+/* line 639, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
 body.outlook p {
   display: inline !important; }
 
 /*  Media Queries */
 @media only screen and (max-width: 600px) {
-  /* line 643, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 647, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] img {
     width: auto !important;
     height: auto !important; }
 
-  /* line 648, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 652, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] center {
     min-width: 0 !important; }
 
-  /* line 652, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 656, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .container {
     width: 95% !important; }
 
-  /* line 656, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 660, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .row {
     width: 100% !important;
     display: block !important; }
 
-  /* line 661, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 665, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .wrapper {
     display: block !important;
     padding-right: 0 !important; }
 
-  /* line 666, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 670, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns,
   table[class="body"] .column {
     table-layout: fixed !important;
@@ -850,77 +855,77 @@ body.outlook p {
     padding-left: 0px !important;
     display: block !important; }
 
-  /* line 676, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 680, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .wrapper.first .columns,
   table[class="body"] .wrapper.first .column {
     display: table !important; }
 
-  /* line 681, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 685, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] table.columns td,
   table[class="body"] table.column td {
     width: 100% !important; }
 
-  /* line 686, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 690, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.one,
   table[class="body"] .column td.one {
     width: 8.333333% !important; }
 
-  /* line 688, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 692, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.two,
   table[class="body"] .column td.two {
     width: 16.666666% !important; }
 
-  /* line 690, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 694, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.three,
   table[class="body"] .column td.three {
     width: 25% !important; }
 
-  /* line 692, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 696, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.four,
   table[class="body"] .column td.four {
     width: 33.333333% !important; }
 
-  /* line 694, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 698, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.five,
   table[class="body"] .column td.five {
     width: 41.666666% !important; }
 
-  /* line 696, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 700, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.six,
   table[class="body"] .column td.six {
     width: 50% !important; }
 
-  /* line 698, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 702, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.seven,
   table[class="body"] .column td.seven {
     width: 58.333333% !important; }
 
-  /* line 700, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 704, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.eight,
   table[class="body"] .column td.eight {
     width: 66.666666% !important; }
 
-  /* line 702, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 706, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.nine,
   table[class="body"] .column td.nine {
     width: 75% !important; }
 
-  /* line 704, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 708, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.ten,
   table[class="body"] .column td.ten {
     width: 83.333333% !important; }
 
-  /* line 706, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 710, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.eleven,
   table[class="body"] .column td.eleven {
     width: 91.666666% !important; }
 
-  /* line 708, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 712, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .columns td.twelve,
   table[class="body"] .column td.twelve {
     width: 100% !important; }
 
-  /* line 711, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 715, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] td.offset-by-one,
   table[class="body"] td.offset-by-two,
   table[class="body"] td.offset-by-three,
@@ -934,26 +939,37 @@ body.outlook p {
   table[class="body"] td.offset-by-eleven {
     padding-left: 0 !important; }
 
-  /* line 725, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 729, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] table.columns td.expander {
     width: 1px !important; }
 
-  /* line 729, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 733, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
     padding-left: 30px !important; }
 
-  /* line 734, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 738, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
     padding-right: 30px !important; }
 
-  /* line 739, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 743, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .hide-for-small,
   table[class="body"] .show-for-desktop {
     display: none !important; }
 
-  /* line 744, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 748, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .show-for-small,
   table[class="body"] .hide-for-desktop {
-    display: inherit !important; } }
+    display: inherit !important;
+    max-height: none !important;
+    overflow: inherit !important;
+    max-width: none !important; }
+    /* line 755, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+    table[class="body"] .show-for-small.block,
+    table[class="body"] .hide-for-desktop.block {
+      display: block !important; }
+    /* line 756, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+    table[class="body"] .show-for-small.cell,
+    table[class="body"] .hide-for-desktop.cell {
+      display: table-cell !important; } }
