@@ -1,4 +1,4 @@
-<table class="row">
+<table class="row meta">
   <tr>
     <td class="center" align="center">
       <center>
@@ -10,15 +10,13 @@
               <table class="twelve columns">
                 <tr>
                   <td class="six sub-columns">
-                    <img src="<%= image_path('header__sb-logo.jpg') %>">
+                    <img src="<%= image_url('global/header__sb-logo.jpg') %>?v=000001">
                   </td>
-                  <td class="six sub-columns last txt-right">
-                    <small><span class="hide-for-small">
-                      <div><%= t('header.title') %></div>
-                      <%= t('header.images') %>
-                    </span>
-                    <%= link_to(t("header.view_in_browser"), t("header.view_in_browser_href")) %>
-                    </small>
+                  <td class="six sub-columns last">
+                    <p class="txt-right">
+                        <span class="hide-for-small">Making life a little more awesome for millions of students<br>No images?</span>
+                        <a href="#view">View in browser</a>
+                    </p>
                   </td>
                   <td class="expander"></td>
                 </tr>

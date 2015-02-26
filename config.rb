@@ -44,11 +44,11 @@ configure :development do
 end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def image_url(source)
+    "http://cdn.ymaservices.com/email/#{source}"
+  end
+end
 
 set :css_dir, 'stylesheets'
 

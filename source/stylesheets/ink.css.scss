@@ -134,6 +134,8 @@ table.column {
 table.columns td,
 table.column td {
   padding: 0px 0px $margin; 
+
+  &.collapse-bottom { padding-bottom: 0; }
 }
 
 table.columns td.sub-columns,
@@ -164,10 +166,6 @@ table.nine { width: 430px; }
 table.ten { width: 480px; }
 table.eleven { width: 530px; }
 table.twelve { width: 580px; }
-
-.wrapper.collapse-right {
-  & > .six { width: 300px; }
-}
 
 table.one center { min-width: 30px; }
 table.two center { min-width: 80px; }
@@ -320,6 +318,10 @@ span.center {
   text-align: center;
 }
 
+img.right {
+  float: right;
+}
+
 img.center {
   margin: 0 auto;
   float: none;
@@ -338,7 +340,7 @@ img.center {
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
   color: #777;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
-  font-weight: 200; 
+  font-weight: normal; 
   padding:0; 
   margin: 0;
   text-align: left; 
@@ -348,8 +350,7 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   word-break: normal;
-  font-weight: normal;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .title-margin {
@@ -360,13 +361,13 @@ h1 {font-size: 40px;}
 h2 {font-size: 36px;}
 h3,
 h4,
-h5 {font-size: 16px;}
+h5 {font-size: 18px;}
 h6 {font-size: 16px;}
 body, table.body, p, td {font-size: 14px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
-  font-size: 18px;
-  line-height:26px;
+  font-size: 17px;
+  line-height:25px;
 }
 
 p.sign-off {
@@ -384,16 +385,16 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
+  color: #2B7CCB; 
   text-decoration: none;
 }
 
 a:hover { 
-  color: #2795b6 !important;
+  color: #2B7CCB !important;
 }
 
 a:active { 
-  color: #2795b6 !important;
+  color: #2B7CCB !important;
 }
 
 a:visited { 
@@ -504,6 +505,10 @@ table.large-button td a {
   font-family: Helvetica, Arial, sans-serif;
   color: $button-color;
   font-size: 16px;
+
+  &:hover {
+    color: $button-color;
+  }
 }
 
 table.tiny-button td a {
@@ -726,8 +731,20 @@ body.outlook p {
     padding-left: 0 !important;
   }
 
+  table[class="body"] td.wrapper.collapse-right {
+    padding-right: 19px !important;
+  }
+
   table[class="body"] table.columns td.expander {
     width: 1px !important;
+  }
+
+  table[class="body"] table.button,
+  table[class="body"] table.tiny-button,
+  table[class="body"] table.small-button,
+  table[class="body"] table.medium-button,
+  table[class="body"] table.large-button {
+    overflow: visible;
   }
 
   table[class="body"] .right-text-pad,
@@ -755,4 +772,5 @@ body.outlook p {
     &.block { display: block !important; }
     &.cell { display: table-cell !important; }
   }
+
 }

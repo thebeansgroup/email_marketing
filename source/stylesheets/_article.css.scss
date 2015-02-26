@@ -5,6 +5,7 @@
 $border-color: #ddd;
 
 .article {
+    background-color: #fff;
   .article__content {
     background-color: #fff;
     border: 1px solid $border-color; 
@@ -25,11 +26,13 @@ b.article__stack {
 
   &.one {
     margin: 0 2.5%;
-    background-color: #fdfdfd;
+    background-color: #c8efc1 ;
+    border-bottom: 1px solid #80ca74 ;    
   }
 
   &.two {
     margin: 0 5%;
-    background-color: #fafafa;
+    background-color: #8dde7f ;
+    border-bottom: 1px solid #63c254 ;
   }
 }
