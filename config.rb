@@ -78,10 +78,7 @@ class InlineCSS < Middleman::Extension
           content.puts premailer.to_inline_css
         end
 
-        puts '=========================================================================='
-        # File.delete( Dir.getwd + File::SEPARATOR + source_file)
-        puts '=========================================================================='
-
+        File.delete( Dir.getwd + File::SEPARATOR + source_file)
 
       end
     end
