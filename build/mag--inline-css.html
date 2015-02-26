@@ -26,7 +26,7 @@ img {
 outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block;
 }
 body {
-color: #777; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+color: #777; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
 }
 body {
 font-size: 14px; line-height: 19px;
@@ -230,7 +230,7 @@ img {
 outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block;
 }
 body {
-color: #777; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+color: #777; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
 }
 body {
 font-size: 14px; line-height: 19px;
@@ -440,6 +440,9 @@ background-color: #EFF0EB;
   table[class="body"] .column {
     table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
   }
+  table[class="body"] .wrapper {
+    padding: 10px -1px 0 0;
+  }
   table[class="body"] .wrapper.first .columns {
     display: table !important;
   }
@@ -563,6 +566,36 @@ background-color: #EFF0EB;
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
+  table[class="body"] table.columns .text-pad {
+    padding-left: 10px; padding-right: 10px;
+  }
+  table[class="body"] table.column .text-pad {
+    padding-left: 10px; padding-right: 10px;
+  }
+  table[class="body"] table.columns .left-text-pad {
+    padding-left: 10px;
+  }
+  table[class="body"] table.columns .text-pad-left {
+    padding-left: 10px;
+  }
+  table[class="body"] table.column .left-text-pad {
+    padding-left: 10px;
+  }
+  table[class="body"] table.column .text-pad-left {
+    padding-left: 10px;
+  }
+  table[class="body"] table.columns .right-text-pad {
+    padding-right: 10px;
+  }
+  table[class="body"] table.columns .text-pad-right {
+    padding-right: 10px;
+  }
+  table[class="body"] table.column .right-text-pad {
+    padding-right: 10px;
+  }
+  table[class="body"] table.column .text-pad-right {
+    padding-right: 10px;
+  }
   table[class="body"] table.button {
     overflow: visible;
   }
@@ -579,16 +612,16 @@ background-color: #EFF0EB;
     overflow: visible;
   }
   table[class="body"] .right-text-pad {
-    padding-left: 30px !important;
+    padding-left: 10px !important;
   }
   table[class="body"] .text-pad-right {
-    padding-left: 30px !important;
+    padding-left: 10px !important;
   }
   table[class="body"] .left-text-pad {
-    padding-right: 30px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .text-pad-left {
-    padding-right: 30px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small {
     display: none !important;
@@ -613,6 +646,9 @@ background-color: #EFF0EB;
   }
   table[class="body"] .hide-for-desktop.cell {
     display: table-cell !important;
+  }
+  table[class="body"] .footer-content {
+    padding: 0;
   }
   table[class="body"] .columns td.listing__text {
     width: 75% !important;
@@ -638,6 +674,9 @@ background-color: #EFF0EB;
   table[class="body"] .column {
     table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
   }
+  table[class="body"] .wrapper {
+    padding: 10px -1px 0 0;
+  }
   table[class="body"] .wrapper.first .columns {
     display: table !important;
   }
@@ -761,6 +800,36 @@ background-color: #EFF0EB;
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
+  table[class="body"] table.columns .text-pad {
+    padding-left: 10px; padding-right: 10px;
+  }
+  table[class="body"] table.column .text-pad {
+    padding-left: 10px; padding-right: 10px;
+  }
+  table[class="body"] table.columns .left-text-pad {
+    padding-left: 10px;
+  }
+  table[class="body"] table.columns .text-pad-left {
+    padding-left: 10px;
+  }
+  table[class="body"] table.column .left-text-pad {
+    padding-left: 10px;
+  }
+  table[class="body"] table.column .text-pad-left {
+    padding-left: 10px;
+  }
+  table[class="body"] table.columns .right-text-pad {
+    padding-right: 10px;
+  }
+  table[class="body"] table.columns .text-pad-right {
+    padding-right: 10px;
+  }
+  table[class="body"] table.column .right-text-pad {
+    padding-right: 10px;
+  }
+  table[class="body"] table.column .text-pad-right {
+    padding-right: 10px;
+  }
   table[class="body"] table.button {
     overflow: visible;
   }
@@ -777,16 +846,16 @@ background-color: #EFF0EB;
     overflow: visible;
   }
   table[class="body"] .right-text-pad {
-    padding-left: 30px !important;
+    padding-left: 10px !important;
   }
   table[class="body"] .text-pad-right {
-    padding-left: 30px !important;
+    padding-left: 10px !important;
   }
   table[class="body"] .left-text-pad {
-    padding-right: 30px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .text-pad-left {
-    padding-right: 30px !important;
+    padding-right: 10px !important;
   }
   table[class="body"] .hide-for-small {
     display: none !important;
@@ -812,41 +881,42 @@ background-color: #EFF0EB;
   table[class="body"] .hide-for-desktop.cell {
     display: table-cell !important;
   }
+  table[class="body"] .footer-content {
+    padding: 0;
+  }
   table[class="body"] .columns td.listing__text {
     width: 75% !important;
   }
 }
 </style>
 </head>
-  <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; background: #EFF0EB; margin: 0; padding: 0;">
-    <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; background: #EFF0EB; margin: 0; padding: 0;">
+  <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; background: #EFF0EB; margin: 0; padding: 0;">
+    <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #EFF0EB; margin: 0; padding: 0;">
       <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-        <td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+        <td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
           <center style="width: 100%; min-width: 580px;">
 
           <table class="row meta" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;">
   <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-    <td class="center" align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+    <td class="center" align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
       <center style="width: 100%; min-width: 580px;">
 
         <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
 
               <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
                 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                  <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
-                    <img src="http://cdn.ymaservices.com/email/global/header__sb-logo.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block;" align="left" />
+                  <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                    <img src="http://cdn.ymaservices.com/email/global/header__sb-logo.jpg?v=000001" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block;" align="left" />
                   </td>
-                  <td class="six sub-columns last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
-                    <p class="txt-right" style="color: #9D9D9D; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: right; line-height: 19px; font-size: 12px; margin: 0 0 20px; padding: 0;" align="right">
-                      <small style="font-size: 12px;">
+                  <td class="six sub-columns last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                    <p class="txt-right" style="color: #b2b2af; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: right; line-height: 19px; font-size: 11px; margin: 0 0 20px; padding: 0;" align="right">
                         <span class="hide-for-small">Making life a little more awesome for millions of students<br>No images?</span>
                         <a href="#view" style="color: #2B7CCB; text-decoration: none;">View in browser</a>
-                      </small>
                     </p>
                   </td>
-                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                 </tr>
               </table>
 
@@ -861,13 +931,13 @@ background-color: #EFF0EB;
   
 <table class="container main-content" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; background: #fff; margin: 0 auto; padding: 0;">
   <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-    <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+    <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
       <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-  <td class="wrapper last collapse-top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0px 0px;" align="left" valign="top">
+  <td class="wrapper last collapse-top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0 0px 0px;" align="left" valign="top">
     <table class="twelve columns header" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; background: #6CD45B; margin: 0 auto; padding: 40px 0 30px;">
       <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-        <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+        <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
           <br/>
           <br/>
           <center style="width: 100%; min-width: 580px;"><img src="http://cdn.ymaservices.com/email/global/mag__hero__logo.jpg" class="center header__logo" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none" /></center>
@@ -875,8 +945,8 @@ background-color: #EFF0EB;
           <br/>
           <div class="text-pad" style="padding-left: 30px; padding-right: 30px;">
             <div class="header__standfirst" style="margin-bottom: 30px;">
-              <h3 class="txt-center" style="color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="center">Chris, is it snowing yet?</h3>
-              <p class="txt-center" style="color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="center">The temperature inside this apple pie is over one thousand degrees. If I squeeze it, a jet of molten bramley apple will squirt out. Could go your way; could go mine. Either way, one of us is going down.</p>
+              <h3 class="txt-center lead" style="color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: center; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="center">Chris, is it snowing yet?</h3>
+              <p class="txt-center lead" style="color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 25px; font-size: 17px; margin: 0 0 20px; padding: 0;" align="center">The temperature inside this apple pie is over one thousand degrees. If I squeeze it, a jet of molten bramley apple will squirt out. Could go your way; could go mine. Either way, one of us is going down.</p>
             </div>
 
             <!-- Deal block  -->
@@ -884,28 +954,28 @@ background-color: #EFF0EB;
   <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="520" height="260" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-      <td class="article__content" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; background: #fff; margin: 0; padding: 10px; border: 1px solid #ddd;" align="left" valign="top">
+      <td class="article__content" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #fff; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #fff; margin: 0; padding: 10px; border: 1px solid #ddd;" align="left" valign="top">
 
-        <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen right now</h3>
-        <p style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+        <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen right now</h3>
+        <p style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
         <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+            <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
               <small style="font-size: 12px;">IN <a href="#" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
             </td>
 
-            <td class="six sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 50%; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+            <td class="six sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 50%; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
 
               <table class="button" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;">
                 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                  <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; display: block; width: auto !important; background: transparent; margin: 0; padding: 8px 0; border: 3px solid #222;" align="center" valign="top">
+                  <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; display: block; width: auto !important; background: transparent; margin: 0; padding: 8px 0; border: 3px solid #222;" align="center" valign="top">
                     <a href="#link" style="color: #222; text-decoration: none; font-weight: bold; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">Button Label</a>
                   </td>
                 </tr>
               </table>
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
@@ -915,19 +985,19 @@ background-color: #EFF0EB;
 </div>
 <!-- / Deal block  -->
  
-            <b class="article__stack one" style="display: block; height: 10px; background: #fdfdfd; margin: 0 2.5%; border-color: #eaeaea; border-style: none solid solid; border-width: 1px;"></b>
-            <b class="article__stack two" style="display: block; height: 10px; background: #fafafa; margin: 0 5%; border-color: #eaeaea; border-style: none solid solid; border-width: 1px;"></b>
+            <b class="article__stack one" style="display: block; height: 10px; background: #c8efc1; margin: 0 2.5%; border-color: #eaeaea#eaeaea#80ca74; border-style: none solid solid; border-width: 1px;"></b>
+            <b class="article__stack two" style="display: block; height: 10px; background: #8dde7f; margin: 0 5%; border-color: #eaeaea#eaeaea#63c254; border-style: none solid solid; border-width: 1px;"></b>
             <br/>
           <div>
         </td>
       </tr>
     </table>
   </td>
-  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
 
 </tr>
 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-  <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+  <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
     <center style="width: 100%; min-width: 580px;"><img src="http://cdn.ymaservices.com/email/global/hero-pointer.jpg" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none" /></center>
   </td>
 </tr>
@@ -935,45 +1005,45 @@ background-color: #EFF0EB;
   
       <table class="row group" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 20px 0 0;">
 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-  <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+  <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
     <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
       <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-        <td class="text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px;" align="left" valign="top">
-          <p class="txt-center" style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="center">On making a documentary for canal boats: ‘This chemical toilet is a Saniflow 33, now this little babe can cope with anything, and I mean anything. Earlier on I put in a pound of mashed up Dundee cake, let's take a look...not a trace! Peace of mind I'm sure, especially if you have elderly relatives on board.’</p>
+        <td class="text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px;" align="left" valign="top">
+          <p class="txt-center lead" style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 25px; font-size: 17px; margin: 0 0 20px; padding: 0;" align="center">On making a documentary for canal boats: ‘This chemical toilet is a Saniflow 33, now this little babe can cope with anything, and I mean anything. Earlier on I put in a pound of mashed up Dundee cake, let's take a look...not a trace! Peace of mind I'm sure, especially if you have elderly relatives on board.’</p>
         </td>
       </tr>
     </table>
   </td>
-  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
 
 </tr>
 </table>
   
       <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
   <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
+      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
+            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
               
                 <!-- Deal block  -->
 
                 <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
                 <div style="padding: 10px; border: 1px solid #ddd;">
                   <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
                   </a>
                   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
                     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
                         <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                       </td>
 
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
                         <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
                       </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                     </tr>
                   </table>
                 </div>
@@ -981,33 +1051,33 @@ background-color: #EFF0EB;
               
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
-      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
               
                 <!-- Deal block  -->
 
                 <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
                 <div style="padding: 10px; border: 1px solid #ddd;">
                   <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
                   </a>
                   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
                     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
                         <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                       </td>
 
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
                         <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
                       </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                     </tr>
                   </table>
                 </div>
@@ -1015,105 +1085,35 @@ background-color: #EFF0EB;
               
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-          </tr>
-        </table>
-      </td>
-  </tr>
-  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
-        <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
-          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
-              
-                <!-- Deal block  -->
-
-                <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
-                <div style="padding: 10px; border: 1px solid #ddd;">
-                  <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
-                  </a>
-                  <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
-                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
-                        <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-                      </td>
-
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
-                        <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
-                      </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-                    </tr>
-                  </table>
-                </div>
-                <!-- / Deal block  -->
-              
-
-            </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-          </tr>
-        </table>
-      </td>
-      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
-        <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
-          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
-              
-                <!-- Deal block  -->
-
-                <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
-                <div style="padding: 10px; border: 1px solid #ddd;">
-                  <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
-                  </a>
-                  <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
-                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
-                        <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-                      </td>
-
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
-                        <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
-                      </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-                    </tr>
-                  </table>
-                </div>
-                <!-- / Deal block  -->
-              
-
-            </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
   </tr>
   <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
+      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
+            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
               
                 <!-- Deal block  -->
 
                 <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
                 <div style="padding: 10px; border: 1px solid #ddd;">
                   <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
                   </a>
                   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
                     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
                         <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                       </td>
 
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
                         <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
                       </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                     </tr>
                   </table>
                 </div>
@@ -1121,33 +1121,33 @@ background-color: #EFF0EB;
               
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
-      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
               
                 <!-- Deal block  -->
 
                 <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
                 <div style="padding: 10px; border: 1px solid #ddd;">
                   <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
                   </a>
                   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
                     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
                         <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                       </td>
 
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
                         <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
                       </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                     </tr>
                   </table>
                 </div>
@@ -1155,35 +1155,35 @@ background-color: #EFF0EB;
               
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
   </tr>
   <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
+      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
+            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
               
                 <!-- Deal block  -->
 
                 <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
                 <div style="padding: 10px; border: 1px solid #ddd;">
                   <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
                   </a>
                   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
                     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
                         <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                       </td>
 
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
                         <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
                       </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                     </tr>
                   </table>
                 </div>
@@ -1191,33 +1191,33 @@ background-color: #EFF0EB;
               
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
-      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
         <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
               
                 <!-- Deal block  -->
 
                 <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
                 <div style="padding: 10px; border: 1px solid #ddd;">
                   <a href="#link" style="color: #2B7CCB; text-decoration: none;">
-                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; text-transform: uppercase; font-size: 16px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
-                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
                   </a>
                   <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
                     <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
                         <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                       </td>
 
-                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
                         <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
                       </td>
-                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                     </tr>
                   </table>
                 </div>
@@ -1225,7 +1225,77 @@ background-color: #EFF0EB;
               
 
             </td>
-            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+          </tr>
+        </table>
+      </td>
+  </tr>
+  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+      <td class="wrapper " style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 19px 0px 0px;" align="left" valign="top">
+        <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
+          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+            <td class="left-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 30px;" align="left" valign="top">
+              
+                <!-- Deal block  -->
+
+                <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
+                <div style="padding: 10px; border: 1px solid #ddd;">
+                  <a href="#link" style="color: #2B7CCB; text-decoration: none;">
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                  </a>
+                  <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                        <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
+                      </td>
+
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                        <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
+                      </td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- / Deal block  -->
+              
+
+            </td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+        <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
+          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+            <td class="right-text-pad" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+              
+                <!-- Deal block  -->
+
+                <a href="#link" style="color: #2B7CCB; text-decoration: none;"><img width="270" height="135" src="http://placehold.it/640x320" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
+                <div style="padding: 10px; border: 1px solid #ddd;">
+                  <a href="#link" style="color: #2B7CCB; text-decoration: none;">
+                    <h3 style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 18px; margin: 0; padding: 0;" align="left">10 microwave recipes for when hot food needs to happen</h3>
+                    <p style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 20px; padding: 0;" align="left">I was sick in your handbag but shh don't tell anyone.</p>
+                  </a>
+                  <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                      <td class="four sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 33.333333%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                        <a href="#facebook-link" style="color: #2B7CCB; text-decoration: none;"><img src="http://cdn.ymaservices.com/email/global/mag__article__fb.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
+                      </td>
+
+                      <td class="eight sub-columns last txt-right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: right; min-width: 0px; width: 66.666666%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="top">
+                        <small style="font-size: 12px;">IN <a href="#category-link" class="strong" style="color: #2B7CCB; text-decoration: none; font-weight: bold;">CATEGORY NAME</a></small>
+                      </td>
+                      <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- / Deal block  -->
+              
+
+            </td>
+            <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
           </tr>
         </table>
       </td>
@@ -1234,22 +1304,22 @@ background-color: #EFF0EB;
   
       <table class="row group" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 20px 0 0;">
 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-  <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+  <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
     <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
       <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-        <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+        <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
           <center style="width: 100%; min-width: 580px;"><img width="80" height="80" src="http://cdn.ymaservices.com/email/global/sign-off__avatar.jpg" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none" /></center>
           <br/>
           <div class="text-pad" style="padding-left: 30px; padding-right: 30px;">
-          <p class="txt-center lead" style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 26px; font-size: 18px; margin: 0 0 20px; padding: 0;" align="center">Ok, If you’ve just joined us, we’re talking about who is the best Lord. Lord of the Rings, of the Dance or of the Flies, that’s tonight’s hot topic.</p>
+          <p class="txt-center lead" style="color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 25px; font-size: 17px; margin: 0 0 20px; padding: 0;" align="center">Ok, If you’ve just joined us, we’re talking about who is the best Lord. Lord of the Rings, of the Dance or of the Flies, that’s tonight’s hot topic.</p>
           <p class="txt-center sign-off" style="color: #222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: bold; text-align: center; line-height: 19px; font-size: 20px; margin: 0 0 20px; padding: 0;" align="center">- James </p>
           </div>
         </td>
-        <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+        <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
       </tr>
     </table>
   </td>
-  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
 </tr>
 </table>
   
@@ -1259,10 +1329,10 @@ background-color: #EFF0EB;
 <br/>
 <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-  <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+  <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
     <table class="row group" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 20px 0 0;">
       <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-        <td class="txt-center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="center" valign="top">
+        <td class="txt-center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="center" valign="top">
           <center style="width: 100%; min-width: 580px;">
             <a href="" style="color: #2B7CCB; text-decoration: none;"><img width="280" height="145" src="http://placehold.it/640x320&text=image" class="inline-banner__image hide-for-small" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: inline; border: none;" align="none" /><img width="280" height="145" src="http://placehold.it/640x320&text=text" class="inline-banner__image" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: inline; border: none;" align="none" /></a>
           </center>
@@ -1275,42 +1345,48 @@ background-color: #EFF0EB;
 
 <table class="row meta" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;">
   <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-    <td class="center" align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+    <td class="center" align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
       <center style="width: 100%; min-width: 580px;">
 
         <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
-              <br/>
-              <br/>
-                <p class="txt-center" style="color: #9D9D9D; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 12px; margin: 0 0 20px; padding: 0;" align="center"><img src="http://cdn.ymaservices.com/email/global/footer__sb-logo.jpg" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none" /></p>
+            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+              <div class="footer-content" style="padding: 0 100px;">
+                <br/>
+                <br/>
+                  <p class="txt-center" style="color: #b2b2af; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 19px; font-size: 11px; margin: 0 0 20px; padding: 0;" align="center"><img src="http://cdn.ymaservices.com/email/global/footer__sb-logo.jpg" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none" /></p>
 
-                <p class="txt-center" style="color: #9D9D9D; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 12px; margin: 0 0 20px; padding: 0;" align="center">This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans. Don't like great student freebies and competitions?</p>
+                  <p class="txt-center" style="color: #b2b2af; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 19px; font-size: 11px; margin: 0 0 20px; padding: 0;" align="center">This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans. Don't like great student freebies and competitions?</p>
 
-                <p class="txt-center" style="color: #9D9D9D; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 12px; margin: 0 0 20px; padding: 0;" align="center"><a class="neutral" href="#unsubscribe" style="color: #9D9D9D; text-decoration: none; font-weight: bold; font-size: 12px;">Unsubscribe from this weekly newslette</a> or <a class="neutral" href="#unsubscribe" style="color: #9D9D9D; text-decoration: none; font-weight: bold; font-size: 12px;">manage your preferences</a>.</p>
+                  <p class="txt-center" style="color: #b2b2af; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 19px; font-size: 11px; margin: 0 0 20px; padding: 0;" align="center"><a class="neutral" href="#unsubscribe" style="color: #b2b2af; text-decoration: none; font-weight: bold; font-size: 11px;">Unsubscribe from this weekly newslette</a> or <a class="neutral" href="#unsubscribe" style="color: #b2b2af; text-decoration: none; font-weight: bold; font-size: 11px;">manage your preferences</a>.</p>
 
-                <p class="txt-center" style="color: #9D9D9D; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 12px; margin: 0 0 20px; padding: 0;" align="center">Privacy is important to us. <a class="neutral" href="#policy" style="color: #9D9D9D; text-decoration: none; font-weight: bold; font-size: 12px;">View our privacy policy</a></p>
+                  <p class="txt-center" style="color: #b2b2af; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 19px; font-size: 11px; margin: 0 0 20px; padding: 0;" align="center">Privacy is important to us. <a class="neutral" href="#policy" style="color: #b2b2af; text-decoration: none; font-weight: bold; font-size: 11px;">View our privacy policy</a></p>
+              </div>
             </td>
           </tr>
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
               <table class="five columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 230px; margin: 0 auto; padding: 0;">
                 <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-                  <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
-                    <a class="neutral" href="https://www.facebook.com/studentbeans" style="color: #9D9D9D; text-decoration: none; font-weight: bold; font-size: 12px;"><img src="http://cdn.ymaservices.com/email/global/footer__facebook.jpg" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
+                  <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                    <a class="neutral" href="https://www.facebook.com/studentbeans" style="color: #b2b2af; text-decoration: none; font-weight: bold; font-size: 11px;"><img src="http://cdn.ymaservices.com/email/global/footer__facebook.jpg?v=000001" width="13" height="27" class="right" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: right; clear: both; display: block; border: none;" align="right" /></a>
                   </td>
-                  <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
-                    <a class="neutral" href="https://twitter.com/studentbeans" style="color: #9D9D9D; text-decoration: none; font-weight: bold; font-size: 12px;"><img src="http://cdn.ymaservices.com/email/global/footer__twitter.jpg" class="center" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
+                  <td class="six sub-columns" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 30px 10px 0px;" align="left" valign="top">
+                    <a class="neutral" href="https://twitter.com/studentbeans" style="color: #b2b2af; text-decoration: none; font-weight: bold; font-size: 11px;"><img src="http://cdn.ymaservices.com/email/global/footer__twitter.jpg?v=000001" width="31" height="28" class="" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
                   </td>
 
-                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                 </tr>
               </table>
             </td>
           </tr>
           <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
-              <p class="txt-center" style="color: #9D9D9D; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; line-height: 19px; font-size: 12px; margin: 0 0 20px; padding: 0;" align="center">Registered Office:1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved.</p>
+            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <p class="txt-center" style="color: #b2b2af; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: center; line-height: 19px; font-size: 11px; margin: 0 0 20px; padding: 0;" align="center">Registered Office:1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved.</p>
             </td>
           </tr>
         </table>

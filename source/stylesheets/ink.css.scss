@@ -1,5 +1,6 @@
 $margin: 10px;
 $gutter: 30px;
+$mobile-gutter: 10px;
 
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
@@ -682,6 +683,10 @@ body.outlook p {
     display: block !important;
   }
 
+  table[class="body"] .wrapper {
+    padding: $margin $mobile-gutter - 11px 0 0;
+  }
+
   table[class="body"] .wrapper.first .columns,
   table[class="body"] .wrapper.first .column {
     display: table !important;
@@ -739,6 +744,30 @@ body.outlook p {
     width: 1px !important;
   }
 
+  table[class="body"] {
+    table.columns .text-pad,
+    table.column .text-pad {
+      padding-left: $mobile-gutter;
+      padding-right: $mobile-gutter;
+    }
+
+    table.columns .left-text-pad,
+    table.columns .text-pad-left,
+    table.column .left-text-pad,
+    table.column .text-pad-left {
+      padding-left: $mobile-gutter;
+    }
+
+    table.columns .right-text-pad,
+    table.columns .text-pad-right,
+    table.column .right-text-pad,
+    table.column .text-pad-right {
+      padding-right: $mobile-gutter;
+    }
+  }
+
+
+
   table[class="body"] table.button,
   table[class="body"] table.tiny-button,
   table[class="body"] table.small-button,
@@ -749,12 +778,12 @@ body.outlook p {
 
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: $gutter !important;
+    padding-left: $mobile-gutter !important;
   }
 
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: $gutter !important;
+    padding-right: $mobile-gutter !important;
   }
 
   table[class="body"] .hide-for-small,
