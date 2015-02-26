@@ -978,8 +978,14 @@ body.outlook p {
   table[class="body"] table.column .right-text-pad,
   table[class="body"] table.column .text-pad-right {
     padding-right: 10px; }
+  /* line 768, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns td.sub-columns,
+  table[class="body"] table.column td.sub-columns,
+  table[class="body"] table.columns td.sub-column,
+  table[class="body"] table.column td.sub-column {
+    padding-right: 10px; }
 
-  /* line 771, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 778, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] table.button,
   table[class="body"] table.tiny-button,
   table[class="body"] table.small-button,
@@ -987,33 +993,33 @@ body.outlook p {
   table[class="body"] table.large-button {
     overflow: visible; }
 
-  /* line 779, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 786, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
     padding-left: 10px !important; }
 
-  /* line 784, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 791, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
     padding-right: 10px !important; }
 
-  /* line 789, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 796, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .hide-for-small,
   table[class="body"] .show-for-desktop {
     display: none !important; }
 
-  /* line 794, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+  /* line 801, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
   table[class="body"] .show-for-small,
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
     max-height: none !important;
     overflow: inherit !important;
     max-width: none !important; }
-    /* line 801, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+    /* line 808, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
     table[class="body"] .show-for-small.block,
     table[class="body"] .hide-for-desktop.block {
       display: block !important; }
-    /* line 802, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
+    /* line 809, /Users/ad/src/email_marketing/source/stylesheets/ink.css.scss */
     table[class="body"] .show-for-small.cell,
     table[class="body"] .hide-for-desktop.cell {
       display: table-cell !important; } }
@@ -1181,11 +1187,20 @@ tr.listing {
   /* line 9, /Users/ad/src/email_marketing/source/stylesheets/_listing.css.scss */
   tr.listing > td {
     padding-top: 10px; }
+  /* line 11, /Users/ad/src/email_marketing/source/stylesheets/_listing.css.scss */
+  tr.listing td.listing__text,
+  tr.listing td.listing__button {
+    padding-top: 30px; }
 
 @media only screen and (max-width: 600px) {
-  /* line 13, /Users/ad/src/email_marketing/source/stylesheets/_listing.css.scss */
+  /* line 19, /Users/ad/src/email_marketing/source/stylesheets/_listing.css.scss */
   table[class="body"] .columns td.listing__text {
-    width: 75% !important; } }
+    width: 75% !important; }
+
+  /* line 23, /Users/ad/src/email_marketing/source/stylesheets/_listing.css.scss */
+  table[class="body"] .columns td.listing__text,
+  table[class="body"] .columns td.listing__button {
+    padding-top: 10px; } }
 /**
  * Feature
  */

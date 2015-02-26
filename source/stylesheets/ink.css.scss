@@ -764,6 +764,13 @@ body.outlook p {
     table.column .text-pad-right {
       padding-right: $mobile-gutter;
     }
+
+    table.columns td.sub-columns,
+    table.column td.sub-columns,
+    table.columns td.sub-column,
+    table.column td.sub-column {
+      padding-right: $mobile-gutter;
+    }
   }
 
 
