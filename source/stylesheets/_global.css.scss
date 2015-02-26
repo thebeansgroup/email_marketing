@@ -1,0 +1,48 @@
+
+/**
+  * Global styles and helpers
+  */
+
+body, .body {
+  background-color: #EFF0EB;
+}
+
+.main-content {
+  background-color: #fff;
+}
+
+
+.footer-content {
+    padding: 0 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] .footer-content {
+    padding: 0;
+  }
+
+}
+
+/**
+  * Text helper
+  */
+
+
+.txt-right { text-align: right; }
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+
+
+/**
+  * Links
+  */
+
+a.strong {
+  font-weight: bold;
+}
+
+a.neutral {
+  font-weight: bold;
+  color: #777;
+}

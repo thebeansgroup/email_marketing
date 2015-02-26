@@ -1,3 +1,7 @@
+$margin: 10px;
+$gutter: 30px;
+$mobile-gutter: 10px;
+
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
 **********************************************/
@@ -42,7 +46,7 @@ img {
   outline:none; 
   text-decoration:none; 
   -ms-interpolation-mode: bicubic;
-  width: auto;
+  // width: auto;
   max-width: 100%; 
   float: left; 
   clear: both; 
@@ -59,7 +63,7 @@ a img {
 }
 
 p {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 $margin*2;
 }
 
 table {
@@ -105,6 +109,9 @@ table.row {
   padding: 0px; 
   width: 100%;
   position: relative;
+
+  &.group { padding: $margin*2 0 0; }
+  &.last { padding-bottom: $margin*4; }
 }
 
 table.container table.row {
@@ -112,8 +119,12 @@ table.container table.row {
 }
 
 td.wrapper {
-  padding: 10px 20px 0px 0px;
+  padding: $margin $gutter - 11px 0px 0px;
   position: relative;
+
+  &.collapse-right { padding-right: 0; }
+  &.collapse-left  { padding-left: 0; }
+  &.collapse-top  { padding-top: 0; }
 }
 
 table.columns,
@@ -123,14 +134,16 @@ table.column {
 
 table.columns td,
 table.column td {
-  padding: 0px 0px 10px; 
+  padding: 0px 0px $margin; 
+
+  &.collapse-bottom { padding-bottom: 0; }
 }
 
 table.columns td.sub-columns,
 table.column td.sub-columns,
 table.columns td.sub-column,
 table.column td.sub-column {
-  padding-right: 10px;
+  padding-right: $gutter;
 }
 
 td.sub-column, td.sub-columns {
@@ -226,54 +239,55 @@ td.expander {
 
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 10px;
+  padding-left: $gutter;
 }
 
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 10px;
+  padding-right: $gutter;
 }
 
 /* Block Grid */
+$block-grid-width: 580px;
 
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: $block-grid-width;
 }
 
 .block-grid td {
   display: inline-block;
-  padding:10px;
+  padding:$gutter $gutter*0.75 $gutter $gutter;
 }
 
 .two-up td {
-  width:270px;
+  width:220px;
 }
 
 .three-up td {
-  width:173px;
+  width:130px;
 }
 
 .four-up td {
-  width:125px;
+  width:90px;
 }
 
 .five-up td {
-  width:96px;
+  width:63px;
 }
 
 .six-up td {
-  width:76px;
+  width:40px;
 }
 
 .seven-up td {
@@ -305,6 +319,10 @@ span.center {
   text-align: center;
 }
 
+img.right {
+  float: right;
+}
+
 img.center {
   margin: 0 auto;
   float: none;
@@ -312,14 +330,17 @@ img.center {
 
 .show-for-small,
 .hide-for-desktop {
-  display: none;
+  // display: none !important;
+  display: block;
+  max-height:0px;overflow:hidden;
+  max-width: 0px;
 }
 
 /* Typography */
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  color: #777;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
   margin: 0;
@@ -328,41 +349,53 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #222;
   word-break: normal;
+  font-weight: bold;
+}
+
+.title-margin {
+  padding-bottom: $margin*2;
 }
 
 h1 {font-size: 40px;}
 h2 {font-size: 36px;}
-h3 {font-size: 32px;}
-h4 {font-size: 28px;}
-h5 {font-size: 24px;}
-h6 {font-size: 20px;}
+h3,
+h4,
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
 body, table.body, p, td {font-size: 14px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
-  font-size: 18px;
-  line-height:21px;
+  font-size: 17px;
+  line-height:25px;
+}
+
+p.sign-off {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
 }
 
 p { 
-  margin-bottom: 10px;
+  margin-bottom: $margin*2;
 }
 
 small {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 a {
-  color: #2ba6cb; 
+  color: #2B7CCB; 
   text-decoration: none;
 }
 
 a:hover { 
-  color: #2795b6 !important;
+  color: #2B7CCB !important;
 }
 
 a:active { 
-  color: #2795b6 !important;
+  color: #2B7CCB !important;
 }
 
 a:visited { 
@@ -414,6 +447,8 @@ h6 a:visited {
 
 /* Buttons */
 
+$button-color: #222;
+
 table.button,
 table.tiny-button,
 table.small-button,
@@ -431,10 +466,18 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
-  border: 1px solid #2284a1;
-  color: #ffffff;
+  background: transparent;
+  border: 3px solid $button-color;
+  color: $button-color;
   padding: 8px 0;
+
+  .icon {
+    clear: none;
+    float: none;
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: -1px;
+  }
 }
 
 table.tiny-button td {
@@ -461,13 +504,16 @@ table.large-button td a {
   font-weight: bold;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  color: #ffffff;
+  color: $button-color;
   font-size: 16px;
+
+  &:hover {
+    color: $button-color;
+  }
 }
 
 table.tiny-button td a {
   font-size: 12px;
-  font-weight: normal;
 }
 
 table.small-button td a {
@@ -491,7 +537,7 @@ table.button:active td {
 table.button:hover td a,
 table.button:visited td a,
 table.button:active td a {
-  color: #fff !important;
+  color: #90D231 !important;
 }
 
 table.button:hover td,
@@ -499,7 +545,7 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: #2795b6 !important;
+  background: transparent !important;
 }
 
 table.button:hover td a,
@@ -517,7 +563,7 @@ table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
 table.large-button td a:visited {
-  color: #ffffff !important; 
+  color: #90D231 !important; 
 }
 
 table.secondary td {
@@ -541,9 +587,32 @@ table.secondary:active td a {
   color: #555 !important;
 }
 
+table.white td a,
+table.white:hover td a,
+table.white td a:visited,
+table.white:active td a {
+  color: #fff !important;
+}
+
+table.white td {
+  border-color: #FFF;
+}
+
+table.white:hover td {
+  border-color: #222 !important;
+}
+
+
+table.success td a,
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a {
+  color: #fff !important;
+}
+
 table.success td {
-  background: #5da423;
-  border-color: #457a1a;
+  background: #009E49;
+  border-color: #009E49;
 }
 
 table.success:hover td {
@@ -614,6 +683,10 @@ body.outlook p {
     display: block !important;
   }
 
+  table[class="body"] .wrapper {
+    padding: $margin $mobile-gutter - 11px 0 0;
+  }
+
   table[class="body"] .wrapper.first .columns,
   table[class="body"] .wrapper.first .column {
     display: table !important;
@@ -663,18 +736,61 @@ body.outlook p {
     padding-left: 0 !important;
   }
 
+  table[class="body"] td.wrapper.collapse-right {
+    padding-right: 19px !important;
+  }
+
   table[class="body"] table.columns td.expander {
     width: 1px !important;
   }
 
+  table[class="body"] {
+    table.columns .text-pad,
+    table.column .text-pad {
+      padding-left: $mobile-gutter;
+      padding-right: $mobile-gutter;
+    }
+
+    table.columns .left-text-pad,
+    table.columns .text-pad-left,
+    table.column .left-text-pad,
+    table.column .text-pad-left {
+      padding-left: $mobile-gutter;
+    }
+
+    table.columns .right-text-pad,
+    table.columns .text-pad-right,
+    table.column .right-text-pad,
+    table.column .text-pad-right {
+      padding-right: $mobile-gutter;
+    }
+
+    table.columns td.sub-columns,
+    table.column td.sub-columns,
+    table.columns td.sub-column,
+    table.column td.sub-column {
+      padding-right: $mobile-gutter;
+    }
+  }
+
+
+
+  table[class="body"] table.button,
+  table[class="body"] table.tiny-button,
+  table[class="body"] table.small-button,
+  table[class="body"] table.medium-button,
+  table[class="body"] table.large-button {
+    overflow: visible;
+  }
+
   table[class="body"] .right-text-pad,
   table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
+    padding-left: $mobile-gutter !important;
   }
 
   table[class="body"] .left-text-pad,
   table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
+    padding-right: $mobile-gutter !important;
   }
 
   table[class="body"] .hide-for-small,
@@ -685,5 +801,12 @@ body.outlook p {
   table[class="body"] .show-for-small,
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
+    max-height: none !important;
+    overflow: inherit !important;
+    max-width: none !important;
+
+    &.block { display: block !important; }
+    &.cell { display: table-cell !important; }
   }
+
 }
