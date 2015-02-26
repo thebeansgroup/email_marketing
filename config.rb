@@ -68,8 +68,11 @@ class InlineCSS < Middleman::Extension
     app.after_build do |builder|
       
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
-        
-        premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false)
+        if source_file.start_with? 'build/partials'
+          premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false)
+        else
+          premailer = Premailer.new(source_file, verbose: true, remove_classes: false)
+        end
         destination_file = source_file.gsub('.html', '--inline-css.html')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
