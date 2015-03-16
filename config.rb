@@ -62,6 +62,28 @@ set :images_dir, 'images'
 #
 
 require 'premailer'  
+require 'nokogiri'
+
+def parse(doc)
+  html = Nokogiri::HTML  doc
+  head  = html.search("head")
+  html.search("style").each do |el|
+    head.children.last.add_previous_sibling el
+    # el.remove
+  end
+  html.search("img").each do |el|
+    alt = el.get_attribute('alt')
+    if !alt
+      el.set_attribute('alt', '')
+    end
+  end
+  html.search("[align='none']").each do |el|
+    el.attributes["align"].remove
+  end
+  html.to_html
+end
+
+
 class InlineCSS < Middleman::Extension  
   def initialize(app, options_hash={}, &block)
     super
@@ -69,16 +91,16 @@ class InlineCSS < Middleman::Extension
       
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
         if source_file.start_with? 'build/partials'
-          premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false)
+          premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false, adapter: 'nokogiri')
         else
-          premailer = Premailer.new(source_file, verbose: true, remove_classes: false)
+          premailer = Premailer.new(source_file, verbose: true, remove_classes: false, adapter: 'nokogiri')
         end
         destination_file = source_file.gsub('.html', '--inline-css.html')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
 
         File.open(destination_file, "w") do |content|
-          content.puts premailer.to_inline_css
+          content.puts  parse(premailer.to_inline_css)
         end
 
         File.delete( Dir.getwd + File::SEPARATOR + source_file)
