@@ -12,7 +12,7 @@ en:
     unsubscribe:
       text: "%{newsletter} or %{preferences}."
       newsletter_href: "#unsubscribe"
-      newsletter: "Unsubscribe from this weekly newslette"
+      newsletter: "Unsubscribe from this weekly newsletter"
       preferences_href: "#unsubscribe"
       preferences: "manage your preferences"
     privacy:
