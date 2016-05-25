@@ -1,0 +1,39 @@
+// Global styles and helpers
+
+table.body,
+table.header,
+table.footer {
+  background-color: #EFF0EB;
+}
+
+
+
+.main-content {
+  background-color: #fff;
+}
+
+
+.footer-content {
+    padding: 0 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] .footer-content {
+    padding: 0;
+  }
+
+}
+
+/**
+  * Links
+  */
+
+a.strong {
+  font-weight: bold;
+}
+
+a.neutral {
+  font-weight: bold;
+  color: #777;
+}
