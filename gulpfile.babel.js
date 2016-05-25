@@ -5,7 +5,7 @@ import rimraf   from 'rimraf';
 import panini   from 'panini';
 import yargs    from 'yargs';
 import lazypipe from 'lazypipe';
-import inky     from 'inky';
+//import inky     from 'inky';
 import fs       from 'fs';
 import siphon   from 'siphon-media-query';
 import path     from 'path';
@@ -14,6 +14,38 @@ import beep     from 'beepbeep';
 import colors   from 'colors';
 
 const $ = plugins();
+
+
+var Inky = require('inky').Inky;
+var format = require('util').format;
+
+Inky.prototype.componentLibrary.box = function (element) {
+  var classes = ['container'];
+  if (element.attr('class')) {
+    classes = classes.concat(element.attr('class').split(' '));
+  }
+
+  return format('<table class="box-wrapper"><tbody><tr><td><table class="%s"><tbody><tr><td>%s</td></tr></tbody></table></td></tr></tbody></table>', classes.join(' '), element.html());
+};
+
+var inky = new Inky({
+  components: {
+    box: 'box'
+  }
+});
+
+//var inky2 = new Inky({
+//  components: {
+//    box: 'box'
+//  }
+//});
+
+//console.log(inky2);
+//inky.Inky = inky2;
+//console.log(inky);
+
+
+
 
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
@@ -205,5 +237,3 @@ function zip() {
 
   return merge(moveTasks);
 }
-
-
