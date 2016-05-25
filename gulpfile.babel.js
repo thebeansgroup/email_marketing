@@ -5,7 +5,7 @@ import rimraf   from 'rimraf';
 import panini   from 'panini';
 import yargs    from 'yargs';
 import lazypipe from 'lazypipe';
-//import inky     from 'inky';
+import inky     from 'inky';
 import fs       from 'fs';
 import siphon   from 'siphon-media-query';
 import path     from 'path';
@@ -27,24 +27,6 @@ Inky.prototype.componentLibrary.box = function (element) {
 
   return format('<table class="box-wrapper"><tbody><tr><td><table class="%s"><tbody><tr><td>%s</td></tr></tbody></table></td></tr></tbody></table>', classes.join(' '), element.html());
 };
-
-var inky = new Inky({
-  components: {
-    box: 'box'
-  }
-});
-
-//var inky2 = new Inky({
-//  components: {
-//    box: 'box'
-//  }
-//});
-
-//console.log(inky2);
-//inky.Inky = inky2;
-//console.log(inky);
-
-
 
 
 // Look for the --production flag
@@ -85,7 +67,11 @@ function pages() {
       partials: 'src/partials',
       helpers: 'src/helpers'
     }))
-    .pipe(inky())
+    .pipe(inky({
+      components: {
+        box: 'box'
+      }
+    }))
     .pipe(gulp.dest('dist'));
 }
 
