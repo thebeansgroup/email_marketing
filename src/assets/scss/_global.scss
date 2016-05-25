@@ -6,25 +6,6 @@ table.footer {
   background-color: #EFF0EB;
 }
 
-
-
-.main-content {
-  background-color: #fff;
-}
-
-
-.footer-content {
-    padding: 0 100px;
-}
-
-@media only screen and (max-width: 600px) {
-
-  table[class="body"] .footer-content {
-    padding: 0;
-  }
-
-}
-
 /**
   * Links
   */
@@ -36,4 +17,12 @@ a.strong {
 a.neutral {
   font-weight: bold;
   color: #777;
+}
+
+.footer__facebook-icon {
+  padding-right: 1em;
+}
+
+.footer__twitter-icon {
+  padding-left: 1em;
 }
