@@ -19,14 +19,30 @@ const $ = plugins();
 var Inky = require('inky').Inky;
 var format = require('util').format;
 
-Inky.prototype.componentLibrary.box = function (element) {
-  var classes = ['container'];
+Inky.prototype.componentLibrary.offerbutton = function (element) {
+  var expander = '';
+  var inner = element.html();
+
+  // If we have the href attribute we can create an anchor for the inner of the button;
+  if (element.attr('href')) {
+    inner = format('<a class="btn offer-button__text" href="%s">%s</a>', element.attr('href'), inner);
+  }
+
+  // If the button is expanded, it needs a <center> tag around the content
+  if (element.hasClass('expand') || element.hasClass('expanded')) {
+    inner = format('<center>%s</center>', inner);
+    expander = '\n<td class="expander"></td>';
+  }
+
+  // The .button class is always there, along with any others on the <button> element
+  var classes = ['button'];
   if (element.attr('class')) {
     classes = classes.concat(element.attr('class').split(' '));
   }
 
-  return format('<table class="box-wrapper"><tbody><tr><td><table class="%s"><tbody><tr><td>%s</td></tr></tbody></table></td></tr></tbody></table>', classes.join(' '), element.html());
+  return format('<table class="btn offer-button__container %s"><tr><td><table><tr><td class="btn offer-button">%s</td></tr></table></td>%s</tr></table>', classes.join(' '), inner, expander);
 };
+
 
 
 // Look for the --production flag
@@ -69,7 +85,7 @@ function pages() {
     }))
     .pipe(inky({
       components: {
-        box: 'box'
+        offerbutton: 'offerbutton'
       }
     }))
     .pipe(gulp.dest('dist'));
