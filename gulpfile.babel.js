@@ -52,6 +52,15 @@ Inky.prototype.componentLibrary.header = function (element) {
   return format('<container class="%s header header__container"><row class="collapse meta"><columns small="6" large="6"><img src="http://cdn.ymaservices.com/email/global/header__sb-logo.jpg"></columns><columns small="6" large="6"><p class="text-right"><span class="show-for-large">Making life a little more awesome for millions of students<br>No images?</span><a href="#view"> View in browser</a></p></columns></row></container>', classes.join(' '), element.html());
 };
 
+Inky.prototype.componentLibrary.footer = function (element) {
+  var classes = [];
+  if (element.attr('class')) {
+    classes = classes.concat(element.attr('class').split(' '));
+  }
+
+  return format('<container class="%s footer footer__container"><row class="meta"><columns small="2" large="2"></columns><columns small="9" large="9"><center><spacer size="40"></spacer><img src="http://cdn.ymaservices.com/email/global/footer__sb-logo.jpg"><spacer size="30"></spacer><p class="text-center">This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans. Don\'t like great student freebies and competitions?</p><spacer size="20"></spacer><p class="text-center"><a class="neutral" href="#unsubscribe">Unsubscribe from this weekly newsletter</a> or <a class="neutral" href="#unsubscribe">manage your preferences</a>.</p><spacer size="20"></spacer><p class="text-center">Privacy is important to us. <a class="neutral" href="#policy">View our privacy policy</a>.</p><spacer size="20"></spacer><row><columns small="6" large="6"><a href=""><img class="float-right footer footer__facebook-icon" src="http://cdn.ymaservices.com/email/global/footer__facebook.jpg"></a></columns><columns small="6" large="6"><a href=""><img class="float-left footer footer__twitter-icon" src="http://cdn.ymaservices.com/email/global/footer__twitter.jpg"></a></columns></row></center></columns><columns small="2" large="2"></columns></row><row class="meta"><columns><spacer size="80"></spacer><p class="text-center">Registered Office:1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved.</p></columns></row></container>', classes.join(' '), element.html());
+};
+
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
 
@@ -93,7 +102,8 @@ function pages() {
     .pipe(inky({
       components: {
         offerbutton: 'offerbutton',
-        header: 'header'
+        header: 'header',
+        footer: 'footer'
       }
     }))
     .pipe(gulp.dest('dist'));
