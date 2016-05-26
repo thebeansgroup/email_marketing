@@ -6,6 +6,18 @@
   padding-right: .75em;
 }
 
-.footer.footer__twitter-icon {
+.footer__twitter-icon {
   padding-left: .75em;
+}
+
+.footer__link {
+  font-weight: bold;
+  color: $tbg-meta-text-color;
+}
+
+.footer {
+  p {
+    font-size: 11px;
+    color: $tbg-meta-text-color;
+  }
 }

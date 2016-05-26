@@ -19,3 +19,8 @@ $offer-button-hover-color: #90d231;
 .btn.offer-button__container:hover .btn.offer-button__text {
   color: $offer-button-hover-color;
 }
+
+.btn.offer-button__icon {
+  display: inline-block;
+  margin-right: .5em;
+}
