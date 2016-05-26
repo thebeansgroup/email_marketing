@@ -1,26 +1,12 @@
-// Icons
-
 .global.body {
   background-color: $tbg-global-background-color;
 }
 
-.icon {
-  display: inline-block;
-  margin-right: .5em;
-}
+// Grids
 
-// Links
-
-.neutral {
-  font-weight: bold;
-}
-
-$meta-color: #b2b2af;
-
-.meta {
-  p,
-  .neutral {
-    font-size: 11px;
-    color: $meta-color;
+.collapse-bottom {
+  .body & .columns,
+  .body & .column {
+    padding-bottom: 0;
   }
 }
