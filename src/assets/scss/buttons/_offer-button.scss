@@ -1,0 +1,21 @@
+$offer-button-primary-color: #fff;
+$offer-button-secondary-color: #000;
+$offer-button-hover-color: #90d231;
+
+.btn.offer-button__container .btn.offer-button {
+  background: $offer-button-primary-color;
+  border: 3px solid $offer-button-secondary-color;
+  padding: .25em 3em;
+}
+
+.btn.offer-button__container .btn.offer-button__text {
+  color: $offer-button-secondary-color;
+}
+
+.btn.offer-button__container:hover .btn.offer-button {
+  background: $offer-button-primary-color;
+}
+
+.btn.offer-button__container:hover .btn.offer-button__text {
+  color: $offer-button-hover-color;
+}
