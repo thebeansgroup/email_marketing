@@ -43,7 +43,14 @@ Inky.prototype.componentLibrary.offerbutton = function (element) {
   return format('<table class="btn offer-button__container %s"><tr><td><table><tr><td class="btn offer-button">%s</td></tr></table></td>%s</tr></table>', classes.join(' '), inner, expander);
 };
 
+Inky.prototype.componentLibrary.header = function (element) {
+  var classes = [];
+  if (element.attr('class')) {
+    classes = classes.concat(element.attr('class').split(' '));
+  }
 
+  return format('<container class="%s header header__container"><row class="collapse meta"><columns small="6" large="6"><img src="http://cdn.ymaservices.com/email/global/header__sb-logo.jpg"></columns><columns small="6" large="6"><p class="text-right"><span class="show-for-large">Making life a little more awesome for millions of students<br>No images?</span><a href="#view"> View in browser</a></p></columns></row></container>', classes.join(' '), element.html());
+};
 
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
@@ -85,7 +92,8 @@ function pages() {
     }))
     .pipe(inky({
       components: {
-        offerbutton: 'offerbutton'
+        offerbutton: 'offerbutton',
+        header: 'header'
       }
     }))
     .pipe(gulp.dest('dist'));
