@@ -1,3 +1,11 @@
+function getElementClasses(element) {
+  var classes = [];
+  if (element.attr('class')) {
+    classes = classes.concat(element.attr('class').split(' '));
+  }
+  return classes.join(' ');
+}
+
 module.exports = {
   lockedofferbutton: {
     js: function (element) {
@@ -20,14 +28,8 @@ module.exports = {
         expander = '\n<td class="expander"></td>';
       }
 
-      // The .button class is always there, along with any others on the <button> element
-      var classes = ['button'];
-      if (element.attr('class')) {
-        classes = classes.concat(element.attr('class').split(' '));
-      }
-
       return `
-        <table class="small btn offer-button__container ${classes.join(' ')}">
+        <table class="button small btn offer-button__container ${getElementClasses(element)}">
           <tr>
             <td>
               <table>
@@ -46,26 +48,25 @@ module.exports = {
   },
   header: {
     js: function (element) {
-      var classes = [];
-      if (element.attr('class')) {
-        classes = classes.concat(element.attr('class').split(' '));
-      }
-
+      // TODO: configurable, or hardcoded?
+      var headerLogo = "http://cdn.ymaservices.com/email/global/header__sb-logo.jpg";
+      var headerText = "Making life a little more awesome for millions of students<br>No images?";
+      var headerLinkText = "View in browser";
+      var headerLinkHref = "#view";
+      
       return `
-        <container class="${classes.join(' ')} header header__container">
+        <container class="${getElementClasses(element)} header header__container">
           <row class="collapse meta">
             <columns small="6" large="6">
-              <img src="http://cdn.ymaservices.com/email/global/header__sb-logo.jpg">
+              <img src="${headerLogo}">
             </columns>
             <columns small="6" large="6">
               <p class="text-right">
                 <span class="show-for-large">
-                  Making life a little more awesome for millions of students
-                  <br>
-                  No images?
+                  ${headerText}
                 </span>
-                <a href="#view"> 
-                  View in browser
+                <a href="${headerLinkHref}"> 
+                  ${headerLinkText}
                 </a>
               </p>
             </columns>
@@ -76,52 +77,62 @@ module.exports = {
   },
   footer: {
     js: function (element) {
-      var classes = [];
-      if (element.attr('class')) {
-        classes = classes.concat(element.attr('class').split(' '));
-      }
-
+      // TODO: configurable, or hardcoded?
+      var footerLogo = "http://cdn.ymaservices.com/email/global/footer__sb-logo.jpg";
+      var footerText = "This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans. Don\'t like great student freebies and competitions?";
+      var footerUnsubscribeHref = "#unsubscribe";
+      var footerUnsubscribeText = "Unsubscribe from this weekly newsletter";
+      var footerManagePrefsText = "manage your preferences";
+      var footerPrivacyText = "Privacy is important to us.";
+      var footerPrivacyLinkText = "View our privacy policy";
+      var footerPrivacyLinkHref = "#policy";
+      var footerTwitterImage = "http://cdn.ymaservices.com/email/global/footer__twitter.jpg";
+      var footerTwitterHref = "https://twitter.com/studentbeans";
+      var footerFacebookImage = "http://cdn.ymaservices.com/email/global/footer__facebook.jpg";
+      var footerFacebookHref = "https://www.facebook.com/Student-Beans-257062494492133/?fref=ts";
+      var footerAddress = "Registered Office: 1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved.";
+      
       return `
-        <container class="${classes.join(' ')} footer footer__container">
+        <container class="${getElementClasses(element)} footer footer__container">
           <row class="meta">
             <columns small="2" large="2"></columns>
             <columns small="9" large="9">
               <center>
                 <spacer size="40"></spacer>
-                <img src="http://cdn.ymaservices.com/email/global/footer__sb-logo.jpg">
+                <img src="${footerLogo}">
                 <spacer size="30"></spacer>
                 <p class="text-center">
-                  This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans. Don\'t like great student freebies and competitions?
+                  ${footerText}
                 </p>
                 <spacer size="20"></spacer>
                 <p class="text-center">
-                  <a class="footer__link" href="#unsubscribe">
-                    Unsubscribe from this weekly newsletter
+                  <a class="footer__link" href="${footerUnsubscribeHref}">
+                    ${footerUnsubscribeText}
                   </a>
                   or
-                  <a class="footer__link" href="#unsubscribe">
-                    manage your preferences
+                  <a class="footer__link" href="${footerUnsubscribeHref}">
+                    ${footerManagePrefsText}
                   </a>
                   .
                 </p>
                 <spacer size="20"></spacer>
                 <p class="text-center">
-                  Privacy is important to us.
-                  <a class="footer__link" href="#policy">
-                    View our privacy policy
+                  ${footerPrivacyText}
+                  <a class="footer__link" href="${footerPrivacyLinkHref}">
+                    ${footerPrivacyLinkText}
                   </a>
                   .
                 </p>
                 <spacer size="20"></spacer>
                 <row>
                   <columns small="6" large="6">
-                    <a href="">
-                      <img class="float-right footer footer__facebook-icon" src="http://cdn.ymaservices.com/email/global/footer__facebook.jpg">
+                    <a href="${footerFacebookHref}">
+                      <img class="float-right footer footer__facebook-icon" src="${footerFacebookImage}">
                     </a>
                   </columns>
                   <columns small="6" large="6">
-                    <a href="">
-                      <img class="float-left footer footer__twitter-icon" src="http://cdn.ymaservices.com/email/global/footer__twitter.jpg">
+                    <a href="${footerTwitterHref}">
+                      <img class="float-left footer footer__twitter-icon" src="${footerTwitterImage}">
                     </a>
                   </columns>
                 </row>
@@ -133,7 +144,7 @@ module.exports = {
             <columns>
               <spacer size="80"></spacer>
               <p class="text-center">
-                Registered Office:1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved.
+                ${footerAddress}
               </p>
             </columns>
           </row>
@@ -143,11 +154,6 @@ module.exports = {
   },
   alertinfo: {
     js: function (element) {
-      var classes = [];
-      if (element.attr('class')) {
-        classes = classes.concat(element.attr('class').split(' '));
-      }
-      
       var title = element.attr('title');
       var text = element.attr('text');
       var buttonText = element.attr('button-text');
@@ -157,7 +163,7 @@ module.exports = {
       
       return `
         <columns 
-          class="${classes.join(' ')}"
+          class="${getElementClasses(element)}"
           small="${mobileColumns}"
           large="${desktopColumns}"
         >
@@ -181,12 +187,7 @@ module.exports = {
     }
   },
   alertblock: {
-    js: function (element) {
-      var classes = [];
-      if (element.attr('class')) {
-        classes = classes.concat(element.attr('class').split(' '));
-      }
-      
+    js: function (element) {      
       var title = element.attr('title');
       var text = element.attr('text');
       var buttonText = element.attr('button-text');
@@ -195,7 +196,7 @@ module.exports = {
       var mobileImage = element.attr('mobile-image');
       
       return `
-        <container class="${classes.join(' ')}">
+        <container class="${getElementClasses(element)}">
           <row class="collapse collapse-bottom">
             <columns class="hide-for-large" small="6" large="6">
               <img src="${mobileImage}">
