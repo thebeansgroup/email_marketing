@@ -7,16 +7,23 @@ function getElementClasses(element) {
 }
 
 module.exports = {
-  lockedofferbutton: {
+  tbgbutton: {
     js: function (element) {
+      var classPrefix = element.attr('class-prefix');
       var expander = '';
-      var inner = element.html();
+      var inner = element.attr('text');
+      
+      var padlock = ``;
+      var padlockSrc = "http://cdn.ymaservices.com/email/global/deals__padlock.jpg"
+      if (element.attr('padlock') == "true") {
+        padlock = `<img class="btn ${classPrefix}__icon" src="${padlockSrc}">`;
+      } 
 
       // If we have the href attribute we can create an anchor for the inner of the button;
       if (element.attr('href')) {
         inner = `
-          <a class="btn offer-button__text" href="${element.attr('href')}">
-            <img class="btn offer-button__icon" src="http://cdn.ymaservices.com/email/global/deals__padlock.jpg">
+          <a class="btn ${classPrefix}__text" href="${element.attr('href')}">
+            ${padlock}
             ${inner}
           </a>
         `;
@@ -29,12 +36,12 @@ module.exports = {
       }
 
       return `
-        <table class="button small btn offer-button__container ${getElementClasses(element)}">
+        <table class="button small btn ${classPrefix}__container ${getElementClasses(element)}">
           <tr>
             <td>
               <table>
                 <tr>
-                  <td class="btn offer-button">
+                  <td class="btn ${classPrefix}">
                     ${inner}
                   </td>
                 </tr>
@@ -43,6 +50,32 @@ module.exports = {
             ${expander}
           </tr>
         </table>
+      `;
+    }
+  },
+  lockedofferbutton: {
+    js: function (element) {
+      return `
+        <tbgbutton 
+          class="expand"
+          text="${element.attr('text')}"
+          href="${element.attr('href')}"
+          padlock="true"
+          class-prefix="offer-button"
+        ></tbgbutton>
+      `;
+    }
+  },
+  largedealcardbutton: {
+    js: function (element) {
+      return `
+        <tbgbutton
+          class="expand"
+          text="${element.attr('text')}"
+          href="${element.attr('href')}"
+          padlock="false"
+          class-prefix="large-deal-card-button"
+        ></tbgbutton>
       `;
     }
   },
@@ -177,9 +210,16 @@ module.exports = {
               ${text}
             </p>
             <spacer size="25"></spacer>
-            <lockedofferbutton href="${buttonHref}">
-              ${buttonText}
-            </lockedofferbutton>
+            <row>
+              <columns small="2" large="2"></columns>
+              <columns small="8" large="8">
+                <lockedofferbutton
+                  text="${buttonText}"
+                  href="${buttonHref}"
+                ></lockedofferbutton>
+              </columns>
+              <columns small="2" large="2"></columns>
+            </row>
             <spacer size="25"></spacer>
           </center>
         </columns>
@@ -279,6 +319,43 @@ module.exports = {
                 <img src="${bottomImage}">
               </a>
             </center>
+          </columns>
+        </row>
+      `;
+    }
+  },
+  largedealcard: {
+    js: function (element) {      
+      var image = element.attr('image');
+      var buttonHref = element.attr('button-href');
+      var buttonText = element.attr('button-text');
+      var title = element.attr('title');
+      var company = element.attr('company');
+      
+      return `
+        <row>
+          <columns small="12" large="12">
+            <a href="#link">
+              <img src="${image}">
+            </a>
+            <spacer size="10"></spacer>
+            <row class="collapse">
+              <columns small="6" large="4">
+                <h6 class="large-deal-card__title">
+                  ${title}
+                </h6>
+                <p class="large-deal-card__text">
+                  at ${company}
+                </p>
+              </columns>
+              <columns small="1" large="1">
+              </columns>
+              <columns small="5" large="4">
+                <largedealcardbutton href="${buttonHref}" text="${buttonText}">
+                </largedealcardbutton>
+              </columns>
+              <columns class="show-for-large" large="3">
+            </row>
           </columns>
         </row>
       `;
