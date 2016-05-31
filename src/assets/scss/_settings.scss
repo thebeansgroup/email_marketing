@@ -16,6 +16,41 @@
 // 1. Global
 // ---------
 
+@mixin tbg-button($prefix, $primary-color, $secondary-color, $hover-color, $hover-background-color) {
+  .btn {
+    &.#{$prefix}__container &.#{$prefix} {
+      padding: .25em 0em;
+      background: $primary-color;
+      border: 3px solid $secondary-color;
+    }
+
+    &.#{$prefix}__container &.#{$prefix}__text {
+      color: $secondary-color;
+    }
+
+    &.#{$prefix}__container:hover {
+      cursor: pointer;
+    }
+
+    &.#{$prefix}__container:hover &.#{$prefix} {
+      background: $primary-color;
+    }
+
+    &.#{$prefix}__container:hover &.#{$prefix}__text {
+      color: $hover-color;
+    }
+
+    &.#{$prefix}__container:hover &.#{$prefix} {
+      background: $hover-background-color;
+    }
+
+    &.#{$prefix}__icon {
+      display: inline-block;
+      margin-right: .5em;
+    }
+  }
+}
+
 $tbg-global-background-color: #eff0eb;
 $tbg-meta-text-color: #b2b2af;
 $tbg-primary-text-color: #000;
