@@ -17,6 +17,7 @@ import dealsHeroJS from './src/components/deals/dealsHero';
 import largeDealCardJS from './src/components/deals/largeDealCard';
 import smallDealCardJS from './src/components/deals/smallDealCard';
 import inlineDealCardJS from './src/components/deals/inlineDealCard';
+import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
 
 module.exports = {
   tbgbutton: {
@@ -57,5 +58,8 @@ module.exports = {
   },
   inlinedealcard: {
     js: inlineDealCardJS
+  },
+  inlinedealcardrow: {
+    js: inlineDealCardRowJS
   }
 };
