@@ -79,6 +79,19 @@ module.exports = {
       `;
     }
   },
+  smalldealcardbutton: {
+    js: function (element) {
+      return `
+        <tbgbutton
+          class="expand"
+          text="${element.attr('text')}"
+          href="${element.attr('href')}"
+          padlock="false"
+          class-prefix="small-deal-card-button"
+        ></tbgbutton>
+      `;
+    }
+  },
   header: {
     js: function (element) {
       // TODO: configurable, or hardcoded?
@@ -205,7 +218,7 @@ module.exports = {
             <h6 class="alert-info__title text-center">
               ${title}
             </h6>
-            <spacer size="15"></spacer>
+            <spacer size="30"></spacer>
             <p class="alert-info__text text-center">
               ${text}
             </p>
@@ -351,11 +364,66 @@ module.exports = {
               <columns small="1" large="1">
               </columns>
               <columns small="5" large="4">
-                <largedealcardbutton href="${buttonHref}" text="${buttonText}">
-                </largedealcardbutton>
+                <largedealcardbutton
+                  href="${buttonHref}"
+                  text="${buttonText}"
+                ></largedealcardbutton>
               </columns>
               <columns class="show-for-large" large="3">
             </row>
+          </columns>
+        </row>
+      `;
+    }
+  },
+  smalldealcard: {
+    js: function (element) {      
+      var image = element.attr('image');
+      var buttonHref = element.attr('button-href');
+      var buttonText = element.attr('button-text');
+      var title = element.attr('title');
+      var company = element.attr('company');
+      
+      return `
+        <row class="collapse-bottom">
+          <columns small="3" large="3">
+            <row class="collapse">
+              <columns small="11" large="11">
+                <img src="${image}">
+              </columns>
+              <columns small="1" large="1">
+              </columns>
+            </row>
+          </columns>
+          
+          <columns small="5" large="5">
+            <spacer size="20"></spacer>
+            <h6 class="small-deal-card__title">
+              ${title}
+            </h6>
+            <p class="small-deal-card__text">
+              at ${company}
+            </p>
+          </columns>
+          
+          <columns small="4" large="4">
+            <row class="collapse">
+              <columns small="2" large="2">
+              </columns>
+              <columns small="10" large="10">
+                <spacer size="20"></spacer>
+                <smalldealcardbutton
+                  href="${buttonHref}"
+                  text="${buttonText}"
+                ></smalldealcardbutton>
+              </columns>
+            </row>
+          </columns>
+        </row>
+        
+        <row class="collapse-bottom">
+          <columns small="12" large="12">
+            <hr class="small-deal-card__line-break"></hr>
           </columns>
         </row>
       `;

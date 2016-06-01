@@ -1,8 +1,7 @@
 .large-deal-card__title {
-  margin-bottom: 0;
-  font-weight: bold;
+  @include tbg-title;
 }
 
 .large-deal-card__text {
-  font-size: 14px;
+  @include tbg-text;
 }

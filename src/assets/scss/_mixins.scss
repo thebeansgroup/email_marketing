@@ -1,0 +1,45 @@
+@mixin tbg-button($prefix, $color, $background-color, $border-color, $hover-color, $hover-background-color) {
+  .btn {
+    &.#{$prefix}__container &.#{$prefix} {
+      padding: .25em 0em;
+      background: $background-color;
+      border: 3px solid $border-color;
+    }
+
+    &.#{$prefix}__container &.#{$prefix}__text {
+      color: $color;
+    }
+
+    &.#{$prefix}__container:hover {
+      cursor: pointer;
+    }
+
+    &.#{$prefix}__container:hover &.#{$prefix} {
+      background: $background-color;
+    }
+
+    &.#{$prefix}__container:hover &.#{$prefix}__text {
+      color: $hover-color;
+    }
+
+    &.#{$prefix}__container:hover &.#{$prefix} {
+      background: $hover-background-color;
+    }
+
+    &.#{$prefix}__icon {
+      display: inline-block;
+      margin-right: .5em;
+    }
+  }
+}
+
+@mixin tbg-text {
+  font-size: 14px;
+  color: $tbg-alternative-text-color;
+}
+
+@mixin tbg-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+}

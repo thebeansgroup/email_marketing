@@ -1,9 +1,8 @@
 .alert-info__title {
-  font-size: 1em;
-  font-weight: bold;
+  @include tbg-title;
 }
 
 .alert-info__text {
+  @include tbg-text;
   padding: 0 2em;
-  font-size: 14px;
 }
