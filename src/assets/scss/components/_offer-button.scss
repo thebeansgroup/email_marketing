@@ -1,13 +1,15 @@
 $offer-button-prefix: 'offer-button';
-$offer-button-primary-color: #fff;
-$offer-button-secondary-color: #000;
+$offer-button-color: #000;
+$offer-button-background-color: #fff;
+$offer-button-border-color: #000;
 $offer-button-hover-color: #90d231;
-$offer-button-hover-background-color: $offer-button-primary-color;
+$offer-button-hover-background-color: #fff;
 
 @include tbg-button(
   $offer-button-prefix,
-  $offer-button-primary-color,
-  $offer-button-secondary-color,
+  $offer-button-color,
+  $offer-button-background-color,
+  $offer-button-border-color,
   $offer-button-hover-color,
   $offer-button-hover-background-color
 );

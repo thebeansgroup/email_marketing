@@ -9,12 +9,12 @@ $deals-hero-background-color: #ccc;
 }
 
 .deals-hero__title {
-  padding-bottom: 0.5em;
-  font-weight: bold;
+  @include tbg-title;
+  padding-bottom: 1em;
   color: $tbg-secondary-text-color;
 }
 
 .deals-hero__text {
-  font-size: 14px;
+  @include tbg-text;
   color: $tbg-secondary-text-color;
 }

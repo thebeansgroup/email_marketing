@@ -1,0 +1,13 @@
+.small-deal-card__title {
+  @include tbg-title;
+  font-size: 17px;
+}
+
+.small-deal-card__text {
+  @include tbg-text;
+}
+
+.small-deal-card__line-break {
+  margin: 0.75em auto;
+  border-left: 1px solid $tbg-hr-color;
+}
