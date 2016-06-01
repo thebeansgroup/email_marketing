@@ -1,7 +1,7 @@
 @mixin tbg-button($prefix, $color, $background-color, $border-color, $hover-color, $hover-background-color) {
   .btn {
     &.#{$prefix}__container &.#{$prefix} {
-      padding: .25em 0em;
+      padding: .2em 0em;
       background: $background-color;
       border: 3px solid $border-color;
     }

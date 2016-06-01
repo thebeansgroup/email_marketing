@@ -16,6 +16,7 @@ import verticalAlertBlockJS from './src/components/alerts/verticalAlertBlock';
 import dealsHeroJS from './src/components/deals/dealsHero';
 import largeDealCardJS from './src/components/deals/largeDealCard';
 import smallDealCardJS from './src/components/deals/smallDealCard';
+import inlineDealCardJS from './src/components/deals/inlineDealCard';
 
 module.exports = {
   tbgbutton: {
@@ -53,5 +54,8 @@ module.exports = {
   },
   smalldealcard: {
     js: smallDealCardJS
+  },
+  inlinedealcard: {
+    js: inlineDealCardJS
   }
 };
