@@ -388,25 +388,29 @@ module.exports = {
         <row class="collapse-bottom">
           <columns small="3" large="3">
             <row class="collapse">
-              <columns small="11" large="11">
-                <img src="${image}">
+              <columns small="9" large="11">
+                <a href="${buttonHref}">
+                  <img src="${image}">
+                </a>
               </columns>
-              <columns small="1" large="1">
+              <columns small="3" large="1">
               </columns>
             </row>
           </columns>
           
-          <columns small="5" large="5">
+          <columns small="8" large="5">
             <spacer size="20"></spacer>
-            <h6 class="small-deal-card__title">
-              ${title}
-            </h6>
-            <p class="small-deal-card__text">
-              at ${company}
-            </p>
+            <a href="${buttonHref}">
+              <h6 class="small-deal-card__title">
+                ${title}
+              </h6>
+              <p class="small-deal-card__text">
+                at ${company}
+              </p>
+            </a>
           </columns>
           
-          <columns small="4" large="4">
+          <columns class="show-for-large" small="0" large="4">
             <row class="collapse">
               <columns small="2" large="2">
               </columns>
