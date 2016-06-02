@@ -11,27 +11,33 @@ module.exports = function (element) {
   var company2 = element.attr('company-2');
   
   return `
-    <row>
-      <columns small="12" large="6">
-        <spacer size="30"></spacer>
-        <inlinedealcard
-          image="${image1}"
-          title="${title1}"
-          company="${company1}"
-          button-text="${buttonText1}"
-          button-href="${buttonHref1}"
-        ></inlinedealcard>
-      </columns>
-      <columns small="12" large="6">
-        <spacer size="30"></spacer>
-        <inlinedealcard
-          image="${image2}"
-          title="${title2}"
-          company="${company2}"
-          button-text="${buttonText2}"
-          button-href="${buttonHref2}"
-        ></inlinedealcard>
-      </columns>
-    </row>
+    <container>
+      <row>
+        <columns small="12" large="12">
+          <row>
+            <columns small="12" large="6">
+              <spacer size="30"></spacer>
+              <inlinedealcard
+                image="${image1}"
+                title="${title1}"
+                company="${company1}"
+                button-text="${buttonText1}"
+                button-href="${buttonHref1}"
+              ></inlinedealcard>
+            </columns>
+            <columns small="12" large="6">
+              <spacer size="30"></spacer>
+              <inlinedealcard
+                image="${image2}"
+                title="${title2}"
+                company="${company2}"
+                button-text="${buttonText2}"
+                button-href="${buttonHref2}"
+              ></inlinedealcard>
+            </columns>
+          </row>
+        </columns>
+      </row>
+    </container>
   `;
 }

@@ -1,4 +1,4 @@
-import componentHelper from '../helpers/componentHelper';
+import componentHelper from '../../helpers/componentHelper';
 
 module.exports = function (element) {
   // TODO: configurable, or hardcoded?
