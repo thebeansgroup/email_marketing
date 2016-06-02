@@ -1,5 +1,10 @@
+//Header
 import headerJS from './src/components/header';
+
+//Footers
 import footerJS from './src/components/footer';
+import imageFooterJS from './src/components/imageFooter';
+import simpleFooterJS from './src/components/simpleFooter';
 
 //Buttons
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
@@ -38,6 +43,12 @@ module.exports = {
   },
   footer: {
     js: footerJS
+  },
+  simplefooter: {
+    js: simpleFooterJS
+  },
+  imagefooter: {
+    js: imageFooterJS
   },
   alertinfo: {
     js: alertInfoJS
