@@ -24,7 +24,7 @@ module.exports = function (element) {
   if (element.attr('images') == "true") {
     imageSection = `
       <spacer size="40"></spacer>
-      <row class="meta collapse">
+      <row class="collapse">
         <columns small="12" large="6">
           <a href="${href1}">
             <img src="${image1}">
@@ -42,7 +42,7 @@ module.exports = function (element) {
   return `
     <container class="${componentHelper.getElementClasses(element)} footer footer__container">    
       ${imageSection}
-      <row class="meta">
+      <row>
         <columns small="2" large="2"></columns>
         <columns small="9" large="9">
           <center>
@@ -88,7 +88,7 @@ module.exports = function (element) {
         </columns>
         <columns small="2" large="2"></columns>
       </row>
-      <row class="meta">
+      <row>
         <columns>
           <spacer size="80"></spacer>
           <p class="text-center">

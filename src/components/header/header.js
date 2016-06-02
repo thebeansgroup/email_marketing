@@ -9,7 +9,7 @@ module.exports = function (element) {
   
   return `
     <container class="${componentHelper.getElementClasses(element)} header header__container">
-      <row class="collapse meta">
+      <row class="collapse">
         <columns small="6" large="6">
           <img src="${headerLogo}">
         </columns>
