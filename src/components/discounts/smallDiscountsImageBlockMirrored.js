@@ -12,12 +12,12 @@ module.exports = function (element) {
           <row>
             <columns small="12" large="12">
               <row class="collapse">
-                <columns small="6" large="6">
+                <columns small="12" large="6">
                   <a href="${discountHref}">
                     <img src="${image}">
                   </a>
                 </columns>
-                <columns small="6" large="6">
+                <columns small="12" large="6">
                   <discountsinfo
                     title="${title}"
                     text="${text}"
