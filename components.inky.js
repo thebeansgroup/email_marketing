@@ -18,6 +18,7 @@ import largeDealCardJS from './src/components/deals/largeDealCard';
 import smallDealCardJS from './src/components/deals/smallDealCard';
 import inlineDealCardJS from './src/components/deals/inlineDealCard';
 import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
+import brandsBlockJS from './src/components/deals/brandsBlock';
 
 module.exports = {
   tbgbutton: {
@@ -61,5 +62,8 @@ module.exports = {
   },
   inlinedealcardrow: {
     js: inlineDealCardRowJS
+  },
+  brandsblock: {
+    js: brandsBlockJS
   }
 };
