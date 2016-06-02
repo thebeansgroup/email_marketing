@@ -15,19 +15,12 @@ module.exports = function (element) {
               <row class="collapse">
                 <columns small="6" large="6">
                   <img src="${leftImage}">
-                  <div class="discounts-image-block__text-container">
-                    <h6 class="text-center discounts-image-block__title">
-                      ${title}
-                    </h6>
-                    <p class="text-center discounts-image-block__text">
-                      ${text}
-                    </p>
-                    <spacer size="10"></spacer>
-                    <lockedofferbutton
-                      text="${buttonText}"
-                      href="${buttonHref}"
-                    ></lockedofferbutton>
-                  </div>
+                  <discountsinfo
+                    title="${title}"
+                    text="${text}"
+                    button-href="${buttonHref}"
+                    button-text="${buttonText}"
+                  ></discountsinfo>
                 </columns>
                 <columns small="6" large="6">
                   <img src="${rightImage}">
