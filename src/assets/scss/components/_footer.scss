@@ -1,0 +1,23 @@
+.footer.footer__container {
+  background-color: $tbg-global-background-color;
+}
+
+.footer.footer__facebook-icon {
+  padding-right: .75em;
+}
+
+.footer__twitter-icon {
+  padding-left: .75em;
+}
+
+.footer__link {
+  font-weight: bold;
+  color: $tbg-meta-text-color;
+}
+
+.footer {
+  p {
+    font-size: 11px;
+    color: $tbg-meta-text-color;
+  }
+}

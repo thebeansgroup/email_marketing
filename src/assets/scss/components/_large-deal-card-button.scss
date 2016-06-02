@@ -1,0 +1,15 @@
+$large-deal-card-button-prefix: 'large-deal-card-button';
+$small-deal-card-button-color: #fff;
+$large-deal-card-button-background-color: #009e49;
+$large-deal-card-button-border-color: #009e49;
+$large-deal-card-button-hover-color: #fff;
+$large-deal-card-button-hover-background-color: #457a1a;
+
+@include tbg-button(
+  $large-deal-card-button-prefix,
+  $small-deal-card-button-color,
+  $large-deal-card-button-background-color,
+  $large-deal-card-button-border-color,
+  $large-deal-card-button-hover-color,
+  $large-deal-card-button-hover-background-color
+);

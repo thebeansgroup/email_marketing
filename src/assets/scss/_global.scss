@@ -1,0 +1,12 @@
+.global.body {
+  background-color: $tbg-global-background-color;
+}
+
+// Grids
+
+.collapse-bottom {
+  .body & .columns,
+  .body & .column {
+    padding-bottom: 0;
+  }
+}

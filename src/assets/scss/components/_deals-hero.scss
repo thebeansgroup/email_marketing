@@ -1,0 +1,20 @@
+$deals-hero-background-color: #ccc;
+
+.deals-hero {
+  background-color: $deals-hero-background-color;
+}
+
+.deals-hero__text-container {
+  padding: 1em 2em;
+}
+
+.deals-hero__title {
+  @include tbg-title;
+  padding-bottom: 1em;
+  color: $tbg-secondary-text-color;
+}
+
+.deals-hero__text {
+  @include tbg-text;
+  color: $tbg-secondary-text-color;
+}
