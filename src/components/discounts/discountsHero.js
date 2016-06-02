@@ -27,6 +27,7 @@ module.exports = function (element) {
         <columns small="12" large="12">
           <center>
             <img src="${bottomImage}">
+            <spacer size="10"></spacer>
           </center>
         </columns>
       </row>

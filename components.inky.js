@@ -27,6 +27,7 @@ import brandsBlockJS from './src/components/deals/brandsBlock';
 
 //Discounts
 import discountsHeroJS from './src/components/discounts/discountsHero';
+import largeDiscountsImageBlockJS from './src/components/discounts/largeDiscountsImageBlock';
 
 module.exports = {
   tbgbutton: {
@@ -82,5 +83,8 @@ module.exports = {
   },
   discountshero: {
     js: discountsHeroJS
+  },
+  largediscountsimageblock: {
+    js: largeDiscountsImageBlockJS
   }
 };

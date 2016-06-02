@@ -1,5 +1,7 @@
+$discounts-hero-background-color: #fc8907;
+
 .discounts-hero {
-  background: #FC8907;
+  background: $discounts-hero-background-color;
 }
 
 .discounts-hero__text-container {
