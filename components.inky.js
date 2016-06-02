@@ -1,10 +1,10 @@
-//Header
-import headerJS from './src/components/header';
+//Headers
+import headerJS from './src/components/header/header';
 
 //Footers
-import footerJS from './src/components/footer';
-import imageFooterJS from './src/components/imageFooter';
-import simpleFooterJS from './src/components/simpleFooter';
+import footerJS from './src/components/footer/footer';
+import imageFooterJS from './src/components/footer/imageFooter';
+import simpleFooterJS from './src/components/footer/simpleFooter';
 
 //Buttons
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
