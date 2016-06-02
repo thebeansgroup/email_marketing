@@ -4,6 +4,7 @@ $discount-card-button-background-color: #fff;
 $discount-card-button-border-color: #000;
 $discount-card-button-hover-color: #90d231;
 $discount-card-button-hover-background-color: #fff;
+$discount-card-button-hover-border-color: #000;
 
 @include tbg-button(
   $discount-card-button-prefix,
@@ -11,5 +12,6 @@ $discount-card-button-hover-background-color: #fff;
   $discount-card-button-background-color,
   $discount-card-button-border-color,
   $discount-card-button-hover-color,
-  $discount-card-button-hover-background-color
+  $discount-card-button-hover-background-color,
+  $discount-card-button-hover-border-color
 );

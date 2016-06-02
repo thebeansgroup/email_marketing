@@ -1,0 +1,17 @@
+$discount-banner-button-prefix: 'discount-banner-button';
+$discount-banner-button-color: #fff;
+$discount-banner-button-background-color: #90d231;
+$discount-banner-button-border-color: #fff;
+$discount-banner-button-hover-color: #fff;
+$discount-banner-button-hover-background-color: #90d231;
+$discount-banner-button-hover-border-color: #000;
+
+@include tbg-button(
+  $discount-banner-button-prefix,
+  $discount-banner-button-color,
+  $discount-banner-button-background-color,
+  $discount-banner-button-border-color,
+  $discount-banner-button-hover-color,
+  $discount-banner-button-hover-background-color,
+  $discount-banner-button-hover-border-color
+);

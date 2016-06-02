@@ -12,6 +12,7 @@ import lockedOfferButtonJS from './src/components/buttons/lockedOfferButton';
 import largeDealCardButtonJS from './src/components/buttons/largeDealCardButton';
 import smallDealCardButtonJS from './src/components/buttons/smallDealCardButton';
 import discountCardButtonJS from './src/components/buttons/discountCardButton';
+import discountBannerButtonJS from './src/components/buttons/discountBannerButton';
 
 //Alerts 
 import alertInfoJS from './src/components/alerts/alertInfo';
@@ -34,6 +35,7 @@ import smallDiscountImageBlockJS from './src/components/discounts/smallDiscountI
 import smallDiscountImageBlockMirroredJS from './src/components/discounts/smallDiscountImageBlockMirrored';
 import inlineDiscountCardJS from './src/components/discounts/inlineDiscountCard';
 import inlineDiscountCardRowJS from './src/components/discounts/inlineDiscountCardRow';
+import discountBannerJS from './src/components/discounts/discountBanner';
 
 module.exports = {
   tbgbutton: {
@@ -110,5 +112,11 @@ module.exports = {
   },
   inlinediscountcardrow: {
     js: inlineDiscountCardRowJS
+  },
+  discountbannerbutton: {
+    js: discountBannerButtonJS
+  },
+  discountbanner: {
+    js: discountBannerJS
   },
 };

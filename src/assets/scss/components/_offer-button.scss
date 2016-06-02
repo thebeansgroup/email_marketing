@@ -4,6 +4,7 @@ $offer-button-background-color: #fff;
 $offer-button-border-color: #000;
 $offer-button-hover-color: #90d231;
 $offer-button-hover-background-color: #fff;
+$offer-button-hover-border-color: #000;
 
 @include tbg-button(
   $offer-button-prefix,
@@ -11,5 +12,6 @@ $offer-button-hover-background-color: #fff;
   $offer-button-background-color,
   $offer-button-border-color,
   $offer-button-hover-color,
-  $offer-button-hover-background-color
+  $offer-button-hover-background-color,
+  $offer-button-hover-border-color
 );

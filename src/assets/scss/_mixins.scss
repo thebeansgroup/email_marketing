@@ -1,4 +1,4 @@
-@mixin tbg-button($prefix, $color, $background-color, $border-color, $hover-color, $hover-background-color) {
+@mixin tbg-button($prefix, $color, $background-color, $border-color, $hover-color, $hover-background-color, $hover-border-color) {
   .btn {
     &.#{$prefix}__container &.#{$prefix} {
       padding: .2em 0em;
@@ -14,16 +14,13 @@
       cursor: pointer;
     }
 
-    &.#{$prefix}__container:hover &.#{$prefix} {
-      background: $background-color;
-    }
-
     &.#{$prefix}__container:hover &.#{$prefix}__text {
       color: $hover-color;
     }
 
     &.#{$prefix}__container:hover &.#{$prefix} {
       background: $hover-background-color;
+      border: 3px solid $hover-border-color;
     }
 
     &.#{$prefix}__icon {

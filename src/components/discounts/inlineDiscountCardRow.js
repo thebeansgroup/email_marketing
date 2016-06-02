@@ -16,7 +16,6 @@ module.exports = function (element) {
         <columns small="12" large="12">
           <row>
             <columns small="12" large="6">
-              <spacer size="30"></spacer>
               <inlinediscountcard
                 image="${image1}"
                 title="${title1}"
@@ -26,7 +25,6 @@ module.exports = function (element) {
               ></inlinediscountcard>
             </columns>
             <columns small="12" large="6">
-              <spacer size="30"></spacer>
               <inlinediscountcard
                 image="${image2}"
                 title="${title2}"
