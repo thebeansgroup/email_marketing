@@ -1,7 +1,5 @@
 module.exports = function (element) {      
-  var leftImage = element.attr('left-image');
-  var rightImage = element.attr('right-image');
-  var mobileImage = element.attr('mobile-image');
+  var image = element.attr('image');
   var title = element.attr('title');
   var text = element.attr('text');
   var buttonText = element.attr('button-text');
@@ -13,33 +11,34 @@ module.exports = function (element) {
         <columns small="12" large="12">
           <row>
             <columns small="12" large="12">
-              <row class="collapse">
-                <columns class="show-for-large" large="6">
-                  <a href="${discountHref}">
-                    <img src="${leftImage}">
-                  </a>
-                  <discountsinfo
+              <row class="show-for-large collapse">
+                <columns small="12" large="6">
+                  <discountinfo
                     title="${title}"
                     text="${text}"
                     button-href="${discountHref}"
                     button-text="${buttonText}"
-                  ></discountsinfo>
+                  ></discountinfo>
                 </columns>
-                <columns class="hide-for-large" small="12">
+                <columns small="12" large="6">
                   <a href="${discountHref}">
-                    <img src="${mobileImage}">
+                    <img src="${image}">
                   </a>
-                  <discountsinfo
+                </columns>
+              </row>
+              <row class="hide-for-large collapse">
+                <columns small="12" large="6">
+                  <a href="${discountHref}">
+                    <img src="${image}">
+                  </a>
+                </columns>
+                <columns small="12" large="6">
+                  <discountinfo
                     title="${title}"
                     text="${text}"
                     button-href="${discountHref}"
                     button-text="${buttonText}"
-                  ></discountsinfo>
-                </columns>
-                <columns class="show-for-large" large="6">
-                  <a href="${discountHref}">
-                    <img src="${rightImage}">
-                  </a>
+                  ></discountinfo>
                 </columns>
               </row>
             </columns>

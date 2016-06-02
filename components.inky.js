@@ -11,6 +11,7 @@ import tbgbuttonJS from './src/components/buttons/tbgbutton';
 import lockedOfferButtonJS from './src/components/buttons/lockedOfferButton';
 import largeDealCardButtonJS from './src/components/buttons/largeDealCardButton';
 import smallDealCardButtonJS from './src/components/buttons/smallDealCardButton';
+import discountCardButtonJS from './src/components/buttons/discountCardButton';
 
 //Alerts 
 import alertInfoJS from './src/components/alerts/alertInfo';
@@ -27,11 +28,12 @@ import brandsBlockJS from './src/components/deals/brandsBlock';
 
 //Discounts
 import discountsHeroJS from './src/components/discounts/discountsHero';
-import discountsInfoJS from './src/components/discounts/discountsInfo';
-import largeDiscountsImageBlockJS from './src/components/discounts/largeDiscountsImageBlock';
-import smallDiscountsImageBlockJS from './src/components/discounts/smallDiscountsImageBlock';
-import smallDiscountsImageBlockMirroredJS from './src/components/discounts/smallDiscountsImageBlockMirrored';
-
+import discountInfoJS from './src/components/discounts/discountInfo';
+import largeDiscountImageBlockJS from './src/components/discounts/largeDiscountImageBlock';
+import smallDiscountImageBlockJS from './src/components/discounts/smallDiscountImageBlock';
+import smallDiscountImageBlockMirroredJS from './src/components/discounts/smallDiscountImageBlockMirrored';
+import inlineDiscountCardJS from './src/components/discounts/inlineDiscountCard';
+import inlineDiscountCardRowJS from './src/components/discounts/inlineDiscountCardRow';
 
 module.exports = {
   tbgbutton: {
@@ -88,16 +90,25 @@ module.exports = {
   discountshero: {
     js: discountsHeroJS
   },
-  largediscountsimageblock: {
-    js: largeDiscountsImageBlockJS
+  largediscountimageblock: {
+    js: largeDiscountImageBlockJS
   },
-  discountsinfo: {
-    js: discountsInfoJS
+  discountinfo: {
+    js: discountInfoJS
   },
-  smalldiscountsimageblock: {
-    js: smallDiscountsImageBlockJS
+  smalldiscountimageblock: {
+    js: smallDiscountImageBlockJS
   },
-  smalldiscountsimageblockmirrored: {
-    js: smallDiscountsImageBlockMirroredJS
+  smalldiscountimageblockmirrored: {
+    js: smallDiscountImageBlockMirroredJS
+  },
+  discountcardbutton: {
+    js: discountCardButtonJS
+  },
+  inlinediscountcard: {
+    js: inlineDiscountCardJS
+  },
+  inlinediscountcardrow: {
+    js: inlineDiscountCardRowJS
   },
 };

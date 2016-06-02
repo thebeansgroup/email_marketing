@@ -5,11 +5,11 @@ module.exports = function (element) {
   var buttonHref = element.attr('button-href');
   
   return `
-    <div class="discounts-image-block__text-container">
-      <h6 class="text-center discounts-image-block__title">
+    <div class="discount-image-block__text-container">
+      <h6 class="text-center discount-image-block__title">
         ${title}
       </h6>
-      <p class="text-center discounts-image-block__text">
+      <p class="text-center discount-image-block__text">
         ${text}
       </p>
       <spacer size="10"></spacer>

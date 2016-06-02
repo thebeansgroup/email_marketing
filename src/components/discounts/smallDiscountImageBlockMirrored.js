@@ -11,34 +11,19 @@ module.exports = function (element) {
         <columns small="12" large="12">
           <row>
             <columns small="12" large="12">
-              <row class="show-for-large collapse">
-                <columns small="12" large="6">
-                  <discountsinfo
-                    title="${title}"
-                    text="${text}"
-                    button-href="${discountHref}"
-                    button-text="${buttonText}"
-                  ></discountsinfo>
-                </columns>
-                <columns small="12" large="6">
-                  <a href="${discountHref}">
-                    <img src="${image}">
-                  </a>
-                </columns>
-              </row>
-              <row class="hide-for-large collapse">
+              <row class="collapse">
                 <columns small="12" large="6">
                   <a href="${discountHref}">
                     <img src="${image}">
                   </a>
                 </columns>
                 <columns small="12" large="6">
-                  <discountsinfo
+                  <discountinfo
                     title="${title}"
                     text="${text}"
                     button-href="${discountHref}"
                     button-text="${buttonText}"
-                  ></discountsinfo>
+                  ></discountinfo>
                 </columns>
               </row>
             </columns>

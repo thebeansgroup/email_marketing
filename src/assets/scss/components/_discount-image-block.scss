@@ -1,0 +1,12 @@
+.discount-image-block__text-container {
+  padding: 1.5em 2.25em;
+}
+
+.discount-image-block__title {
+  @include tbg-title;
+  padding-bottom: 1em;
+}
+
+.discount-image-block__text {
+  @include tbg-text;
+}
