@@ -1,0 +1,18 @@
+.discounts-hero {
+  background: #FC8907;
+}
+
+.discounts-hero__text-container {
+  padding: 1em 2em;
+}
+
+.discounts-hero__title {
+  @include tbg-title;
+  padding-bottom: 1em;
+  color: $tbg-secondary-text-color;
+}
+
+.discounts-hero__text {
+  @include tbg-text;
+  color: $tbg-secondary-text-color;
+}

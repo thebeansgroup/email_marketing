@@ -25,6 +25,9 @@ import inlineDealCardJS from './src/components/deals/inlineDealCard';
 import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
 import brandsBlockJS from './src/components/deals/brandsBlock';
 
+//Discounts
+import discountsHeroJS from './src/components/discounts/discountsHero';
+
 module.exports = {
   tbgbutton: {
     js: tbgbuttonJS
@@ -76,5 +79,8 @@ module.exports = {
   },
   brandsblock: {
     js: brandsBlockJS
+  },
+  discountshero: {
+    js: discountsHeroJS
   }
 };
