@@ -27,8 +27,11 @@ import brandsBlockJS from './src/components/deals/brandsBlock';
 
 //Discounts
 import discountsHeroJS from './src/components/discounts/discountsHero';
-import largeDiscountsImageBlockJS from './src/components/discounts/largeDiscountsImageBlock';
 import discountsInfoJS from './src/components/discounts/discountsInfo';
+import largeDiscountsImageBlockJS from './src/components/discounts/largeDiscountsImageBlock';
+import smallDiscountsImageBlockJS from './src/components/discounts/smallDiscountsImageBlock';
+import smallDiscountsImageBlockMirroredJS from './src/components/discounts/smallDiscountsImageBlockMirrored';
+
 
 module.exports = {
   tbgbutton: {
@@ -90,5 +93,11 @@ module.exports = {
   },
   discountsinfo: {
     js: discountsInfoJS
-  }
+  },
+  smalldiscountsimageblock: {
+    js: smallDiscountsImageBlockJS
+  },
+  smalldiscountsimageblockmirrored: {
+    js: smallDiscountsImageBlockMirroredJS
+  },
 };

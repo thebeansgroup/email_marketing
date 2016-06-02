@@ -1,6 +1,5 @@
 module.exports = function (element) {      
-  var leftImage = element.attr('left-image');
-  var rightImage = element.attr('right-image');
+  var image = element.attr('image');
   var title = element.attr('title');
   var text = element.attr('text');
   var buttonText = element.attr('button-text');
@@ -15,19 +14,16 @@ module.exports = function (element) {
               <row class="collapse">
                 <columns small="6" large="6">
                   <a href="${discountHref}">
-                    <img src="${leftImage}">
+                    <img src="${image}">
                   </a>
+                </columns>
+                <columns small="6" large="6">
                   <discountsinfo
                     title="${title}"
                     text="${text}"
                     button-href="${discountHref}"
                     button-text="${buttonText}"
                   ></discountsinfo>
-                </columns>
-                <columns small="6" large="6">
-                  <a href="${discountHref}">
-                    <img src="${rightImage}">
-                  </a>
                 </columns>
               </row>
             </columns>
