@@ -35,6 +35,7 @@ module.exports = function (element) {
         <columns class="show-for-large" small="12" large="2">
         </columns>
       </row>
+      <spacer size="30"></spacer>
     </container>      
   `;
 }

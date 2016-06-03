@@ -36,6 +36,8 @@ import smallDiscountImageBlockMirroredJS from './src/components/discounts/smallD
 import inlineDiscountCardJS from './src/components/discounts/inlineDiscountCard';
 import inlineDiscountCardRowJS from './src/components/discounts/inlineDiscountCardRow';
 import discountBannerJS from './src/components/discounts/discountBanner';
+import inlineInfoDiscountCardJS from './src/components/discounts/inlineInfoDiscountCard';
+import inlineInfoDiscountCardRowJS from './src/components/discounts/inlineInfoDiscountCardRow';
 
 module.exports = {
   tbgbutton: {
@@ -118,5 +120,11 @@ module.exports = {
   },
   discountbanner: {
     js: discountBannerJS
+  },
+  inlineinfodiscountcard: {
+    js: inlineInfoDiscountCardJS
+  },
+  inlineinfodiscountcardrow: {
+    js: inlineInfoDiscountCardRowJS
   },
 };
