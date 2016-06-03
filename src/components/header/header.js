@@ -1,25 +1,24 @@
 import componentHelper from '../../helpers/componentHelper';
 
 module.exports = function (element) {
-  // TODO: configurable, or hardcoded?
-  var headerLogo = "http://cdn.ymaservices.com/email/global/header__sb-logo.jpg";
-  var headerText = "Making life a little more awesome for millions of students<br>No images?";
-  var headerLinkText = "View in browser";
-  var headerLinkHref = "#view";
+  var logo = element.attr('logo');
+  var text = element.attr('text');
+  var linkText = element.attr('link-text');
+  var linkHref = element.attr('link-href');
   
   return `
     <container class="${componentHelper.getElementClasses(element)} header header__container">
       <row class="collapse">
         <columns small="6" large="6">
-          <img src="${headerLogo}">
+          <img src="${logo}">
         </columns>
         <columns small="6" large="6">
           <p class="text-right">
             <span class="show-for-large">
-              ${headerText}
+              ${text}
             </span>
-            <a href="${headerLinkHref}"> 
-              ${headerLinkText}
+            <a href="${linkHref}"> 
+              ${linkText}
             </a>
           </p>
         </columns>
