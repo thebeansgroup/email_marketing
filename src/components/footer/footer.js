@@ -1,20 +1,20 @@
 import componentHelper from '../../helpers/componentHelper';
 
 module.exports = function (element) {
-  // TODO: configurable, or hardcoded?
-  var footerLogo = "http://cdn.ymaservices.com/email/global/footer__sb-logo.jpg";
-  var footerText = "This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans. Don\'t like great student freebies and competitions?";
-  var footerUnsubscribeHref = "#unsubscribe";
-  var footerUnsubscribeText = "Unsubscribe from this weekly newsletter";
-  var footerManagePrefsText = "manage your preferences";
-  var footerPrivacyText = "Privacy is important to us.";
-  var footerPrivacyLinkText = "View our privacy policy";
-  var footerPrivacyLinkHref = "#policy";
-  var footerTwitterImage = "http://cdn.ymaservices.com/email/global/footer__twitter.jpg";
-  var footerTwitterHref = "https://twitter.com/studentbeans";
-  var footerFacebookImage = "http://cdn.ymaservices.com/email/global/footer__facebook.jpg";
-  var footerFacebookHref = "https://www.facebook.com/Student-Beans-257062494492133/?fref=ts";
-  var footerAddress = "Registered Office: 1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved.";
+  var logo = element.attr('logo');
+  var text = element.attr('text');
+  var unsubscribeHref = element.attr('unsubscribe-href');
+  var unsubscribeText = element.attr('unsubscribe-text');
+  var managePrefsText = element.attr('manage-prefs-text');
+  var managePrefsHref = element.attr('manage-prefs-href');
+  var privacyText = element.attr('privacy-text');
+  var privacyLinkText = element.attr('privacy-link-text');
+  var privacyLinkHref = element.attr('privacy-link-href');  
+  var twitterImage = element.attr('twitter-image');
+  var twitterHref = element.attr('twitter-href');
+  var facebookImage = element.attr('facebook-image');
+  var facebookHref = element.attr('facebook-href');
+  var address = element.attr('address');
   var image1 = element.attr('image-1');
   var image2 = element.attr('image-2');
   var href1 = element.attr('href-1');
@@ -47,40 +47,39 @@ module.exports = function (element) {
         <columns small="9" large="9">
           <center>
             <spacer size="30"></spacer>
-            <img src="${footerLogo}">
+            <img src="${logo}">
             <spacer size="30"></spacer>
             <p class="text-center">
-              ${footerText}
+              ${text}
             </p>
             <spacer size="20"></spacer>
             <p class="text-center">
-              <a class="footer__link" href="${footerUnsubscribeHref}">
-                ${footerUnsubscribeText}
+              <a class="footer__link" href="${unsubscribeHref}">
+                ${unsubscribeText}
               </a>
               or
-              <a class="footer__link" href="${footerUnsubscribeHref}">
-                ${footerManagePrefsText}
+              <a class="footer__link" href="${managePrefsHref}">
+                ${managePrefsText}
               </a>
               .
             </p>
             <spacer size="20"></spacer>
             <p class="text-center">
-              ${footerPrivacyText}
-              <a class="footer__link" href="${footerPrivacyLinkHref}">
-                ${footerPrivacyLinkText}
+              ${privacyText}
+              <a class="footer__link" href="${privacyLinkHref}">
+                ${privacyLinkText}
               </a>
-              .
             </p>
             <spacer size="20"></spacer>
             <row>
               <columns small="6" large="6">
-                <a href="${footerFacebookHref}">
-                  <img class="float-right footer footer__facebook-icon" src="${footerFacebookImage}">
+                <a href="${facebookHref}">
+                  <img class="float-right footer footer__facebook-icon" src="${facebookImage}">
                 </a>
               </columns>
               <columns small="6" large="6">
-                <a href="${footerTwitterHref}">
-                  <img class="float-left footer footer__twitter-icon" src="${footerTwitterImage}">
+                <a href="${twitterHref}">
+                  <img class="float-left footer footer__twitter-icon" src="${twitterImage}">
                 </a>
               </columns>
             </row>
@@ -92,7 +91,7 @@ module.exports = function (element) {
         <columns>
           <spacer size="80"></spacer>
           <p class="text-center">
-            ${footerAddress}
+            ${address}
           </p>
         </columns>
       </row>
