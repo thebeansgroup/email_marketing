@@ -12,7 +12,6 @@ module.exports = function (element) {
     <container>
       <row>
         <columns small="12" large="12">
-          <spacer size="10"></spacer>
           <h6 class="text-center brands-block__title">Favourite Brands</h6>
           <spacer size="50"></spacer>
           

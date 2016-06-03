@@ -25,7 +25,9 @@ import largeDealCardJS from './src/components/deals/largeDealCard';
 import smallDealCardJS from './src/components/deals/smallDealCard';
 import inlineDealCardJS from './src/components/deals/inlineDealCard';
 import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
-import brandsBlockJS from './src/components/deals/brandsBlock';
+
+//Brands
+import brandsBlockJS from './src/components/brands/brandsBlock';
 
 //Discounts
 import discountsHeroJS from './src/components/discounts/discountsHero';
