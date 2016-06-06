@@ -61,7 +61,6 @@ module.exports = function (element) {
               <a class="footer__link" href="${managePrefsHref}">
                 ${managePrefsText}
               </a>
-              .
             </p>
             <spacer size="20"></spacer>
             <p class="text-center">

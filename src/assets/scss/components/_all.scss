@@ -1,16 +1,29 @@
-@import 'offer-button';
-@import 'header';
-@import 'footer';
-@import 'alert-info';
-@import 'deals-hero';
-@import 'large-deal-card';
-@import 'large-deal-card-button';
-@import 'small-deal-card';
-@import 'small-deal-card-button';
-@import 'brands-block';
-@import 'discounts-hero';
-@import 'discount-image-block';
-@import 'discount-card-button';
-@import 'discount-card';
-@import 'discount-banner';
-@import 'discount-banner-button';
+// Alerts
+@import 'alerts/alert-info';
+
+// Brands
+@import 'brands/brands-block';
+
+// Buttons
+@import 'buttons/offer-button';
+@import 'buttons/small-deal-card-button';
+@import 'buttons/large-deal-card-button';
+@import 'buttons/discount-card-button';
+@import 'buttons/discount-banner-button';
+
+// Header
+@import 'header/header';
+
+// Footer
+@import 'footer/footer';
+
+// Deals
+@import 'deals/deals-hero';
+@import 'deals/large-deal-card';
+@import 'deals/small-deal-card';
+
+// Discounts
+@import 'discounts/discounts-hero';
+@import 'discounts/discount-image-block';
+@import 'discounts/discount-card';
+@import 'discounts/discount-banner';
