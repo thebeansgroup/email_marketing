@@ -14,28 +14,26 @@ module.exports = function (element) {
       small="${mobileColumns}"
       large="${desktopColumns}"
     >
-      <center>
-        <spacer size="35"></spacer>
-        <h6 class="alert-info__title text-center">
-          ${title}
-        </h6>
-        <spacer size="30"></spacer>
-        <p class="alert-info__text text-center">
-          ${text}
-        </p>
-        <spacer size="25"></spacer>
-        <row>
-          <columns small="2" large="2"></columns>
-          <columns small="8" large="8">
-            <lockedofferbutton
-              text="${buttonText}"
-              href="${buttonHref}"
-            ></lockedofferbutton>
-          </columns>
-          <columns small="2" large="2"></columns>
-        </row>
-        <spacer size="25"></spacer>
-      </center>
+      <spacer size="35"></spacer>
+      <h6 class="alert-info__title text-center">
+        ${title}
+      </h6>
+      <spacer size="30"></spacer>
+      <p class="alert-info__text text-center">
+        ${text}
+      </p>
+      <spacer size="25"></spacer>
+      <row>
+        <columns small="2" large="2"></columns>
+        <columns small="8" large="8">
+          <lockedofferbutton
+            text="${buttonText}"
+            href="${buttonHref}"
+          ></lockedofferbutton>
+        </columns>
+        <columns small="2" large="2"></columns>
+      </row>
+      <spacer size="25"></spacer>
     </columns>
   `;
 }

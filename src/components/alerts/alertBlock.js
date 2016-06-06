@@ -25,7 +25,7 @@ module.exports = function (element) {
           desktop-columns="6"
         ></alertinfo>
         <columns class="show-for-large" small="12" large="6">
-          <img src="${image}">
+          <img height="300" width="300" src="${image}">
         </columns>
       </row>
     </container>

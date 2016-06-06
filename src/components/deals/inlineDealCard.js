@@ -1,12 +1,12 @@
 module.exports = function (element) {      
   var image = element.attr('image');
-  var buttonHref = element.attr('button-href');
+  var dealHref = element.attr('deal-href');
   var buttonText = element.attr('button-text');
   var title = element.attr('title');
   var company = element.attr('company');
   
   return `
-    <a href="#link">
+    <a href="${dealHref}">
       <img src="${image}">
     </a>
     <spacer size="10"></spacer>
@@ -23,7 +23,7 @@ module.exports = function (element) {
       </columns>
       <columns small="5" large="5">
         <smalldealcardbutton
-          href="${buttonHref}"
+          href="${dealHref}"
           text="${buttonText}"
         ></largedealcardbutton>
       </columns>

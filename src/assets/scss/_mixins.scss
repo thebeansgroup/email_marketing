@@ -1,13 +1,14 @@
 @mixin tbg-button($prefix, $color, $background-color, $border-color, $hover-color, $hover-background-color, $hover-border-color) {
   .btn {
     &.#{$prefix}__container &.#{$prefix} {
-      padding: .2em 0em;
       background: $background-color;
       border: 3px solid $border-color;
     }
 
     &.#{$prefix}__container &.#{$prefix}__text {
       color: $color;
+      border: none;
+      outline: none;
     }
 
     &.#{$prefix}__container:hover {
@@ -16,6 +17,8 @@
 
     &.#{$prefix}__container:hover &.#{$prefix}__text {
       color: $hover-color;
+      border: none;
+      outline: none;
     }
 
     &.#{$prefix}__container:hover &.#{$prefix} {
@@ -25,9 +28,11 @@
 
     &.#{$prefix}__icon {
       display: inline-block;
-      margin-right: .5em;
     }
   }
+
+  // Outlook fix https://github.com/zurb/foundation-emails/issues/415
+  .button.expand { td:not(.expander) { width: 100%; } }
 }
 
 @mixin tbg-text {

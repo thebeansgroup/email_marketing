@@ -6,7 +6,7 @@ module.exports = function (element) {
   var company = element.attr('company');
   
   return `
-    <a href="#link">
+    <a href="${buttonHref}">
       <img src="${image}">
     </a>
     <spacer size="10"></spacer>

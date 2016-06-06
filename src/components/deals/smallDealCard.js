@@ -1,6 +1,6 @@
 module.exports = function (element) {      
   var image = element.attr('image');
-  var buttonHref = element.attr('button-href');
+  var dealHref = element.attr('deal-href');
   var buttonText = element.attr('button-text');
   var title = element.attr('title');
   var company = element.attr('company');
@@ -13,7 +13,7 @@ module.exports = function (element) {
             <columns small="3" large="3">
               <row class="collapse">
                 <columns small="9" large="11">
-                  <a href="${buttonHref}">
+                  <a href="${dealHref}">
                     <img src="${image}">
                   </a>
                 </columns>
@@ -24,7 +24,7 @@ module.exports = function (element) {
             
             <columns small="8" large="5">
               <spacer size="20"></spacer>
-              <a href="${buttonHref}">
+              <a href="${dealHref}">
                 <h6 class="small-deal-card__title">
                   ${title}
                 </h6>
@@ -41,7 +41,7 @@ module.exports = function (element) {
                 <columns small="10" large="10">
                   <spacer size="20"></spacer>
                   <smalldealcardbutton
-                    href="${buttonHref}"
+                    href="${dealHref}"
                     text="${buttonText}"
                   ></smalldealcardbutton>
                 </columns>

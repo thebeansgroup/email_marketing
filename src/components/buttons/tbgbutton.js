@@ -8,7 +8,7 @@ module.exports = function (element) {
   var padlock = ``;
   var padlockSrc = "http://cdn.ymaservices.com/email/global/deals__padlock.jpg"
   if (element.attr('padlock') == "true") {
-    padlock = `<img class="btn ${classPrefix}__icon" src="${padlockSrc}">`;
+    padlock = `<img class="btn ${classPrefix}__icon" src="${padlockSrc}">&nbsp;&nbsp;`;
   } 
 
   // If we have the href attribute we can create an anchor for the inner of the button;

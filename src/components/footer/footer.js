@@ -54,32 +54,40 @@ module.exports = function (element) {
             </p>
             <spacer size="20"></spacer>
             <p class="text-center">
-              <a class="footer__link" href="${unsubscribeHref}">
+              <a class="footer footer__link" href="${unsubscribeHref}">
                 ${unsubscribeText}
               </a>
               or
-              <a class="footer__link" href="${managePrefsHref}">
+              <a class="footer footer__link" href="${managePrefsHref}">
                 ${managePrefsText}
               </a>
             </p>
             <spacer size="20"></spacer>
             <p class="text-center">
               ${privacyText}
-              <a class="footer__link" href="${privacyLinkHref}">
+              <a class="footer footer__link" href="${privacyLinkHref}">
                 ${privacyLinkText}
               </a>
             </p>
             <spacer size="20"></spacer>
             <row>
-              <columns small="6" large="6">
-                <a href="${facebookHref}">
-                  <img class="float-right footer footer__facebook-icon" src="${facebookImage}">
-                </a>
+              <columns small="4" large="4">
               </columns>
-              <columns small="6" large="6">
-                <a href="${twitterHref}">
-                  <img class="float-left footer footer__twitter-icon" src="${twitterImage}">
-                </a>
+              <columns small="4" large="4">
+                <row>
+                  <columns small="6" large="6">
+                    <a href="${facebookHref}">
+                      <img src="${facebookImage}">
+                    </a>
+                  </columns>
+                  <columns small="6" large="6">
+                    <a href="${twitterHref}">
+                      <img src="${twitterImage}">
+                    </a>
+                  </columns>
+                </row>
+              </columns>
+              <columns small="4" large="4">
               </columns>
             </row>
           </center>
@@ -88,7 +96,7 @@ module.exports = function (element) {
       </row>
       <row>
         <columns>
-          <spacer size="80"></spacer>
+          <spacer size="60"></spacer>
           <p class="text-center">
             ${address}
           </p>
