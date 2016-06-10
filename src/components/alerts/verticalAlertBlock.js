@@ -6,18 +6,16 @@ module.exports = function (element) {
   var buttonText = element.attr('button-text');
   var buttonHref = element.attr('button-href');
   var image = element.attr('image');
-  var mobileImage = element.attr('mobile-image');
   
   return `
     <container class="${componentHelper.getElementClasses(element)}">
       <row class="collapse collapse-bottom">
-        <columns class="hide-for-large" small="6" large="6">
-          <img src="${mobileImage}">
-        </columns>
-      </row>
-      <row class="collapse collapse-bottom">
-        <columns class="show-for-large" small="12" large="12">
-          <img src="${image}">
+        <columns small="12" large="12">
+          <center>
+            <a href="${buttonHref}">
+              <img width="640" height="320" src="${image}">
+            </a>
+          </center>
         </columns>
       </row>
       <row class="collapse collapse-bottom">
