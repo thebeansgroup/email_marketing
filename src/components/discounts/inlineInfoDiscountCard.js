@@ -7,17 +7,17 @@ module.exports = function (element) {
   
   return `
     <a href="${discountHref}">
-      <img src="${image}">
+      <img width="250" height="125" src="${image}">
     </a>
-    <div class="discount-card__text-container">
-      <h6 class="text-center discount-card__title">${title}</h6>
-      <spacer size="20"></spacer>
-      <p class="text-center discount-card__text">${text}</p>
-    </div>
+    <spacer size="20"></spacer>
+    <h6 class="text-center discount-card__title">${title}</h6>
+    <spacer size="20"></spacer>
+    <p class="text-center discount-card__text">${text}</p>
     <row>
       <columns small="1" large="1">
       </columns>
       <columns small="10" large="10">
+        <spacer size="10"></spacer>
         <discountcardbutton
           href="${discountHref}"
           text="${buttonText}"

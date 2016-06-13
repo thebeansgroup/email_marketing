@@ -12,7 +12,6 @@ import lockedOfferButtonJS from './src/components/buttons/lockedOfferButton';
 import largeDealCardButtonJS from './src/components/buttons/largeDealCardButton';
 import smallDealCardButtonJS from './src/components/buttons/smallDealCardButton';
 import discountCardButtonJS from './src/components/buttons/discountCardButton';
-import discountBannerButtonJS from './src/components/buttons/discountBannerButton';
 
 //Alerts 
 import alertInfoJS from './src/components/alerts/alertInfo';
@@ -30,14 +29,11 @@ import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
 import brandsBlockJS from './src/components/brands/brandsBlock';
 
 //Discounts
-import discountsHeroJS from './src/components/discounts/discountsHero';
 import discountInfoJS from './src/components/discounts/discountInfo';
-import largeDiscountImageBlockJS from './src/components/discounts/largeDiscountImageBlock';
-import smallDiscountImageBlockJS from './src/components/discounts/smallDiscountImageBlock';
-import smallDiscountImageBlockMirroredJS from './src/components/discounts/smallDiscountImageBlockMirrored';
+import discountImageBlockJS from './src/components/discounts/discountImageBlock';
+import discountImageBlockMirroredJS from './src/components/discounts/discountImageBlockMirrored';
 import inlineDiscountCardJS from './src/components/discounts/inlineDiscountCard';
 import inlineDiscountCardRowJS from './src/components/discounts/inlineDiscountCardRow';
-import discountBannerJS from './src/components/discounts/discountBanner';
 import inlineInfoDiscountCardJS from './src/components/discounts/inlineInfoDiscountCard';
 import inlineInfoDiscountCardRowJS from './src/components/discounts/inlineInfoDiscountCardRow';
 
@@ -93,20 +89,14 @@ module.exports = {
   brandsblock: {
     js: brandsBlockJS
   },
-  discountshero: {
-    js: discountsHeroJS
-  },
-  largediscountimageblock: {
-    js: largeDiscountImageBlockJS
-  },
   discountinfo: {
     js: discountInfoJS
   },
-  smalldiscountimageblock: {
-    js: smallDiscountImageBlockJS
+  discountimageblock: {
+    js: discountImageBlockJS
   },
-  smalldiscountimageblockmirrored: {
-    js: smallDiscountImageBlockMirroredJS
+  discountimageblockmirrored: {
+    js: discountImageBlockMirroredJS
   },
   discountcardbutton: {
     js: discountCardButtonJS
@@ -116,12 +106,6 @@ module.exports = {
   },
   inlinediscountcardrow: {
     js: inlineDiscountCardRowJS
-  },
-  discountbannerbutton: {
-    js: discountBannerButtonJS
-  },
-  discountbanner: {
-    js: discountBannerJS
   },
   inlineinfodiscountcard: {
     js: inlineInfoDiscountCardJS

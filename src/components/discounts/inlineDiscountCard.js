@@ -7,7 +7,7 @@ module.exports = function (element) {
   
   return `
     <a href="${buttonHref}">
-      <img src="${image}">
+      <img width="250" height="125" src="${image}">
     </a>
     <spacer size="10"></spacer>
     <row class="collapse">
