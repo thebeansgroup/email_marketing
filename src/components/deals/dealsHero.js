@@ -3,6 +3,7 @@ import componentHelper from '../../helpers/componentHelper';
 module.exports = function (element) {      
   var topImage = element.attr('top-image');
   var bottomImage = element.attr('bottom-image');
+  var backgroundColour = element.attr('background-colour');
   var href = element.attr('href');
   var title = element.attr('title');
   var text = element.attr('text');
@@ -13,16 +14,16 @@ module.exports = function (element) {
         <columns small="12" large="12">
           <center class="deals-hero">
             <a href="${href}">
-              <img src="${topImage}">
-              <div class="deals-hero__text-container">
+              <img width="580" height="400" src="${topImage}">
+              <div class="deals-hero__text-container" style="background-color:${backgroundColour};">
                 <h6 class="text-center deals-hero__title">
                   ${title}
                 </h6>
-                <p class="text-center deals-hero__text">
+                <span class="text-center deals-hero__text">
                   ${text}
-                </p>
+                </span>
               </div>
-              <img src="${bottomImage}">
+              <img width="580" height="75" src="${bottomImage}">
             </a>
           </center>
         </columns>

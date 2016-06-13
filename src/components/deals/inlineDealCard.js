@@ -6,9 +6,14 @@ module.exports = function (element) {
   var company = element.attr('company');
   
   return `
-    <a href="${dealHref}">
-      <img src="${image}">
-    </a>
+    <row class="collapse">
+      <columns small="12" large="12">
+        <a href="${dealHref}">
+          &nbsp;
+          <img width="266" height="133" src="${image}">
+        </a>
+      </columns>
+    </row>
     <spacer size="10"></spacer>
     <row class="collapse">
       <columns small="6" large="6">

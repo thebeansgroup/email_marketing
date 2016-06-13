@@ -9,31 +9,32 @@ module.exports = function (element) {
     <container>
       <row>
         <columns small="12" large="12">
-          <row>
-            <columns small="12" large="12">
-              <a href="${dealHref}">
-                <img src="${image}">
-              </a>
-              <spacer size="10"></spacer>
-              <row class="collapse">
-                <columns small="6" large="4">
-                  <h6 class="large-deal-card__title">
-                    ${title}
-                  </h6>
-                  <p class="large-deal-card__text">
-                    at ${company}
-                  </p>
-                </columns>
-                <columns small="1" large="1">
-                </columns>
-                <columns small="5" large="4">
-                  <largedealcardbutton
-                    href="${dealHref}"
-                    text="${buttonText}"
-                  ></largedealcardbutton>
-                </columns>
-                <columns class="show-for-large" large="3">
-              </row>
+          <a href="${dealHref}">
+            &nbsp;
+            <img width="548" height="274" src="${image}">
+          </a>
+        </columns>
+      </row>
+      <row>
+        <columns small="12" large="12">
+          <row class="collapse">
+            <columns small="6" large="4">
+              <h6 class="large-deal-card__title">
+                ${title}
+              </h6>
+              <p class="large-deal-card__text">
+                at ${company}
+              </p>
+            </columns>
+            <columns small="1" large="1">
+            </columns>
+            <columns small="5" large="4">
+              <largedealcardbutton
+                href="${dealHref}"
+                text="${buttonText}"
+              ></largedealcardbutton>
+            </columns>
+            <columns class="show-for-large" large="3">
             </columns>
           </row>
         </columns>
