@@ -7,9 +7,8 @@
   color: $tbg-meta-text-color;
 }
 
-.footer {
-  p {
-    font-size: 11px;
-    color: $tbg-meta-text-color;
-  }
+.footer__text-block {
+  font-size: 11px;
+  color: $tbg-meta-text-color;
+  text-align: center;
 }

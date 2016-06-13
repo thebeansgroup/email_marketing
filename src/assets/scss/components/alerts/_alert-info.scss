@@ -1,8 +1,18 @@
 .alert-info__title {
   @include tbg-title;
+  padding-top: 2em;
 }
 
 .alert-info__text {
   @include tbg-text;
-  padding: 0 2em;
+  padding: 0 1em;
+}
+
+.alert-info__text-container {
+  border-right: 10px solid $tbg-secondary-text-color;
+  border-left: 10px solid $tbg-secondary-text-color;
+}
+
+.alert-info__button-container {
+  padding: 0em 3em;
 }
