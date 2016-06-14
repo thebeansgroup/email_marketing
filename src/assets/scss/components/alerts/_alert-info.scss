@@ -1,6 +1,10 @@
-.alert-info__title {
+.alert-info__title--horizontal {
   @include tbg-title;
   padding-top: 2em;
+}
+
+.alert-info__title--vertical {
+  @include tbg-title;
 }
 
 .alert-info__text {

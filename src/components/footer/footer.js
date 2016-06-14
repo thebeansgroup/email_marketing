@@ -88,15 +88,19 @@ module.exports = function (element) {
           </columns>
           <columns small="4" large="4">
             <row>
-              <columns small="6" large="6">
+            <columns small="2" large="2">
+            </columns>
+              <columns small="4" large="4">
                 <a href="${facebookHref}">
                   <img src="${facebookImage}">
                 </a>
               </columns>
-              <columns small="6" large="6">
+              <columns small="4" large="4">
                 <a href="${twitterHref}">
                   <img src="${twitterImage}">
                 </a>
+              </columns>
+              <columns small="2" large="2">
               </columns>
             </row>
           </columns>

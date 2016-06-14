@@ -19,6 +19,7 @@ module.exports = function (element) {
           class="alert-block__info"
           title="${title}"
           text="${text}"
+          class-modifier="horizontal"
           button-text="${buttonText}"
           button-href="${buttonHref}"
           mobile-columns="12"

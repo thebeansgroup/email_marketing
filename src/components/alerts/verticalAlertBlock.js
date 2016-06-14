@@ -12,15 +12,17 @@ module.exports = function (element) {
       <row class="collapse collapse-bottom">
         <columns small="12" large="12">
           <a href="${buttonHref}">
-            &nbsp;
             <img width="640" height="320" src="${image}">
+            &nbsp;
           </a>
         </columns>
       </row>
       <row class="collapse collapse-bottom">
+        <br/>
         <alertinfo 
           title="${title}"
           text="${text}"
+          class-modifier="vertical"
           button-text="${buttonText}"
           button-href="${buttonHref}"
           mobile-columns="12"
