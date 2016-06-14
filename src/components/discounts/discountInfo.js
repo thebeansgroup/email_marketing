@@ -7,6 +7,8 @@ module.exports = function (element) {
   var buttonText = attributeHelper.getAttribute(element, 'button-text');
   var buttonHref = attributeHelper.getAttribute(element, 'button-href');
   
+  // <br/>s required for Outlook 07, 10, 13 
+  // to give at least SOME vertical spacing since padding isnt supported
   return `
     <div class="discount-info__text-container">
       <h6 class="discount-info__keyword text-center">

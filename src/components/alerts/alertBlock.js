@@ -26,8 +26,6 @@ module.exports = function (element) {
             text="${text}"
             button-text="${buttonText}"
             button-href="${buttonHref}"
-            mobile-columns="12"
-            desktop-columns="12"
           ></alertinfo>
         </columns>
       </row>
