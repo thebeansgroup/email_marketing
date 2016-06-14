@@ -9,7 +9,7 @@ import simpleFooterJS from './src/components/footer/simpleFooter';
 //Buttons
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
 import lockedOfferButtonJS from './src/components/buttons/lockedOfferButton';
-import largeDealCardButtonJS from './src/components/buttons/largeDealCardButton';
+import dealCardButtonJS from './src/components/buttons/dealCardButton';
 import smallDealCardButtonJS from './src/components/buttons/smallDealCardButton';
 import discountCardButtonJS from './src/components/buttons/discountCardButton';
 
@@ -19,8 +19,9 @@ import alertBlockJS from './src/components/alerts/alertBlock';
 import verticalAlertBlockJS from './src/components/alerts/verticalAlertBlock';
 
 //Deals
+import dealsHeaderImageJS from './src/components/deals/dealsHeaderImage';
 import dealsHeroJS from './src/components/deals/dealsHero';
-import largeDealCardJS from './src/components/deals/largeDealCard';
+import dealCardJS from './src/components/deals/dealCard';
 import smallDealCardJS from './src/components/deals/smallDealCard';
 import inlineDealCardJS from './src/components/deals/inlineDealCard';
 import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
@@ -44,8 +45,8 @@ module.exports = {
   lockedofferbutton: {
     js: lockedOfferButtonJS
   },
-  largedealcardbutton: {
-    js: largeDealCardButtonJS
+  dealcardbutton: {
+    js: dealCardButtonJS
   },
   smalldealcardbutton: {
     js: smallDealCardButtonJS
@@ -71,11 +72,14 @@ module.exports = {
   verticalalertblock: {
     js: verticalAlertBlockJS
   },
+  dealsheaderimage: {
+    js: dealsHeaderImageJS
+  },
   dealshero: {
     js: dealsHeroJS
   },
-  largedealcard: {
-    js: largeDealCardJS
+  dealcard: {
+    js: dealCardJS
   },
   smalldealcard: {
     js: smallDealCardJS

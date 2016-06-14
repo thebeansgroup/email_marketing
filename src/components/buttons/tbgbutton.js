@@ -28,7 +28,7 @@ module.exports = function (element) {
   }
 
   return `
-    <table class="button small btn ${classPrefix}__container ${componentHelper.getElementClasses(element)}">
+    <table class="button tiny btn ${classPrefix}__container ${componentHelper.getElementClasses(element)}">
       <tr>
         <td>
           <table>

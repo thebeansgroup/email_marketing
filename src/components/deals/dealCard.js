@@ -3,38 +3,33 @@ module.exports = function (element) {
   var dealHref = element.attr('deal-href');
   var buttonText = element.attr('button-text');
   var title = element.attr('title');
-  var company = element.attr('company');
+  var subtitle = element.attr('subtitle');
   
   return `
     <container>
       <row>
         <columns small="12" large="12">
+          <br/>
           <a href="${dealHref}">
-            &nbsp;
             <img width="548" height="274" src="${image}">
+            &nbsp;
           </a>
-        </columns>
-      </row>
-      <row>
-        <columns small="12" large="12">
           <row class="collapse">
-            <columns small="6" large="4">
-              <h6 class="large-deal-card__title">
+            <columns small="6" large="6">
+              <h6 class="deal-card__title">
                 ${title}
               </h6>
-              <p class="large-deal-card__text">
-                at ${company}
+              <p class="deal-card__text">
+                ${subtitle}
               </p>
             </columns>
             <columns small="1" large="1">
             </columns>
-            <columns small="5" large="4">
-              <largedealcardbutton
+            <columns small="5" large="5">
+              <dealcardbutton
                 href="${dealHref}"
                 text="${buttonText}"
-              ></largedealcardbutton>
-            </columns>
-            <columns class="show-for-large" large="3">
+              ></dealcardbutton>
             </columns>
           </row>
         </columns>

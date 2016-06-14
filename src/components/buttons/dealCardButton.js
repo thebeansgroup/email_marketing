@@ -5,7 +5,7 @@ module.exports = function (element) {
       text="${element.attr('text')}"
       href="${element.attr('href')}"
       padlock="false"
-      class-prefix="large-deal-card-button"
+      class-prefix="deal-card-button"
     ></tbgbutton>
   `;
 }

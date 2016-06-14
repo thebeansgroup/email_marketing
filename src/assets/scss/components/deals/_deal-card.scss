@@ -1,0 +1,20 @@
+$deal-card-keyword-colour: #f33;
+
+.deal-card__title {
+  @include tbg-title;
+}
+
+.deal-card__title--inline {
+  @include tbg-title;
+  padding-top: 0.5em;
+}
+
+.deal-card__text {
+  @include tbg-text;
+}
+
+.deal-card__keyword {
+  @include tbg-text;
+  font-weight: bold;
+  color: $deal-card-keyword-colour;
+}

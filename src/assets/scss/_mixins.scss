@@ -6,6 +6,8 @@
     }
 
     &.#{$prefix}__container &.#{$prefix}__text {
+      font-size: 12px;
+      font-weight: bold;
       color: $color;
       border: none;
       outline: none;
