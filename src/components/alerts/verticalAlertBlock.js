@@ -17,7 +17,7 @@ module.exports = function (element) {
           </a>
         </columns>
       </row>
-      <row class="collapse collapse-bottom">
+      <row class="collapse">
         <br/>
         <alertinfo 
           title="${title}"

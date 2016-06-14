@@ -10,7 +10,6 @@ import simpleFooterJS from './src/components/footer/simpleFooter';
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
 import offerButtonJS from './src/components/buttons/offerButton';
 import dealCardButtonJS from './src/components/buttons/dealCardButton';
-import smallDealCardButtonJS from './src/components/buttons/smallDealCardButton';
 import discountCardButtonJS from './src/components/buttons/discountCardButton';
 
 //Alerts 
@@ -20,9 +19,7 @@ import verticalAlertBlockJS from './src/components/alerts/verticalAlertBlock';
 
 //Deals
 import dealsHeaderImageJS from './src/components/deals/dealsHeaderImage';
-import dealsHeroJS from './src/components/deals/dealsHero';
 import dealCardJS from './src/components/deals/dealCard';
-import smallDealCardJS from './src/components/deals/smallDealCard';
 import inlineDealCardJS from './src/components/deals/inlineDealCard';
 import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
 
@@ -33,10 +30,6 @@ import brandsBlockJS from './src/components/brands/brandsBlock';
 import discountInfoJS from './src/components/discounts/discountInfo';
 import discountImageBlockJS from './src/components/discounts/discountImageBlock';
 import discountImageBlockMirroredJS from './src/components/discounts/discountImageBlockMirrored';
-import inlineDiscountCardJS from './src/components/discounts/inlineDiscountCard';
-import inlineDiscountCardRowJS from './src/components/discounts/inlineDiscountCardRow';
-import inlineInfoDiscountCardJS from './src/components/discounts/inlineInfoDiscountCard';
-import inlineInfoDiscountCardRowJS from './src/components/discounts/inlineInfoDiscountCardRow';
 
 module.exports = {
   tbgbutton: {
@@ -47,9 +40,6 @@ module.exports = {
   },
   dealcardbutton: {
     js: dealCardButtonJS
-  },
-  smalldealcardbutton: {
-    js: smallDealCardButtonJS
   },
   header: {
     js: headerJS
@@ -75,14 +65,8 @@ module.exports = {
   dealsheaderimage: {
     js: dealsHeaderImageJS
   },
-  dealshero: {
-    js: dealsHeroJS
-  },
   dealcard: {
     js: dealCardJS
-  },
-  smalldealcard: {
-    js: smallDealCardJS
   },
   inlinedealcard: {
     js: inlineDealCardJS
@@ -104,17 +88,5 @@ module.exports = {
   },
   discountcardbutton: {
     js: discountCardButtonJS
-  },
-  inlinediscountcard: {
-    js: inlineDiscountCardJS
-  },
-  inlinediscountcardrow: {
-    js: inlineDiscountCardRowJS
-  },
-  inlineinfodiscountcard: {
-    js: inlineInfoDiscountCardJS
-  },
-  inlineinfodiscountcardrow: {
-    js: inlineInfoDiscountCardRowJS
   },
 };
