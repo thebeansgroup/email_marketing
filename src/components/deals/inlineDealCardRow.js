@@ -1,16 +1,18 @@
+import attributeHelper from '../../helpers/attributeHelper';
+
 module.exports = function (element) {      
-  var image1 = element.attr('image-1');
-  var dealHref1 = element.attr('deal-href-1');
-  var buttonText1 = element.attr('button-text-1');
-  var title1 = element.attr('title-1');
-  var subtitle1 = element.attr('subtitle-1');
-  var keyword1 = element.attr('keyword-1');
-  var image2 = element.attr('image-2');
-  var dealHref2 = element.attr('deal-href-2');
-  var buttonText2 = element.attr('button-text-2');
-  var title2 = element.attr('title-2');
-  var subtitle2 = element.attr('subtitle-2');
-  var keyword2 = element.attr('keyword-2');
+  var image1 = attributeHelper.getAttribute(element, 'image-1');
+  var dealHref1 = attributeHelper.getAttribute(element, 'deal-href-1');
+  var buttonText1 = attributeHelper.getAttribute(element, 'button-text-1');
+  var title1 = attributeHelper.getAttribute(element, 'title-1');
+  var subtitle1 = attributeHelper.getAttribute(element, 'subtitle-1');
+  var keyword1 = attributeHelper.getAttribute(element, 'keyword-1');
+  var image2 = attributeHelper.getAttribute(element, 'image-2');
+  var dealHref2 = attributeHelper.getAttribute(element, 'deal-href-2');
+  var buttonText2 = attributeHelper.getAttribute(element, 'button-text-2');
+  var title2 = attributeHelper.getAttribute(element, 'title-2');
+  var subtitle2 = attributeHelper.getAttribute(element, 'subtitle-2');
+  var keyword2 = attributeHelper.getAttribute(element, 'keyword-2');
   
   return `
     <container>

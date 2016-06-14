@@ -1,12 +1,14 @@
 import componentHelper from '../../helpers/componentHelper';
+import attributeHelper from '../../helpers/attributeHelper';
 
 module.exports = function (element) {      
-  var title = element.attr('title');
-  var text = element.attr('text');
-  var buttonText = element.attr('button-text');
-  var buttonHref = element.attr('button-href');
-  var image = element.attr('image');
+  var title = attributeHelper.getAttribute(element, 'title');
+  var text = attributeHelper.getAttribute(element, 'text');
+  var buttonText = attributeHelper.getAttribute(element, 'button-text');
+  var buttonHref = attributeHelper.getAttribute(element, 'button-href');
+  var image = attributeHelper.getAttribute(element, 'image');
   
+  // &nbsp; after img required for Outlook 03 to display image at correct size
   return `
     <container class="${componentHelper.getElementClasses(element)}">
       <row class="collapse collapse-bottom">
@@ -18,15 +20,16 @@ module.exports = function (element) {
         </columns>
       </row>
       <row class="collapse">
-        <br/>
-        <alertinfo 
-          title="${title}"
-          text="${text}"
-          button-text="${buttonText}"
-          button-href="${buttonHref}"
-          mobile-columns="12"
-          desktop-columns="12"
-        ></alertinfo>
+        <columns small="12"large="12">
+          <alertinfo 
+            title="${title}"
+            text="${text}"
+            button-text="${buttonText}"
+            button-href="${buttonHref}"
+            mobile-columns="12"
+            desktop-columns="12"
+          ></alertinfo>
+        </columns>
       </row>
     </container>
   `;

@@ -1,5 +1,3 @@
-$deal-card-keyword-colour: #f33;
-
 .deal-card__title {
   @include tbg-title;
 }
@@ -15,5 +13,5 @@ $deal-card-keyword-colour: #f33;
 .deal-card__keyword {
   @include tbg-text;
   font-weight: bold;
-  color: $deal-card-keyword-colour;
+  color: $tbg-keyword-colour;
 }

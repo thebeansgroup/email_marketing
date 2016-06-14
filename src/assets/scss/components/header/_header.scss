@@ -3,9 +3,7 @@
   background-color: $tbg-global-background-color;
 }
 
-.header {
-  p {
-    font-size: 11px;
-    color: $tbg-meta-text-color;
-  }
+.header__text {
+  font-size: 11px;
+  color: $tbg-meta-text-color;
 }

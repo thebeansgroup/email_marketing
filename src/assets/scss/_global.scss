@@ -2,8 +2,7 @@
   background-color: $tbg-global-background-color;
 }
 
-// Grids
-
+// Collapses bottom padding on columns similar to Foundation's collapse
 .collapse-bottom {
   .body & .columns,
   .body & .column {
@@ -11,6 +10,7 @@
   }
 }
 
+// Required to force top alignment to table cells in Outlook 07, 10, 13
 .columns {
   vertical-align: top;
 }

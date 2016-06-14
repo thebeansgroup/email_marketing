@@ -1,14 +1,15 @@
 import componentHelper from '../../helpers/componentHelper';
+import attributeHelper from '../../helpers/attributeHelper';
 
 module.exports = function (element) {
-  var classPrefix = element.attr('class-prefix');
+  var classPrefix = attributeHelper.getAttribute(element, 'class-prefix');
   var expander = '';
-  var inner = element.attr('text');
+  var inner = attributeHelper.getAttribute(element, 'text');
 
   // If we have the href attribute we can create an anchor for the inner of the button;
-  if (element.attr('href')) {
+  if (attributeHelper.getAttribute(element, 'href')) {
     inner = `
-      <a class="btn ${classPrefix}__text" href="${element.attr('href')}">
+      <a class="btn ${classPrefix}__text" href="${attributeHelper.getAttribute(element, 'href')}">
         ${inner}
       </a>
     `;

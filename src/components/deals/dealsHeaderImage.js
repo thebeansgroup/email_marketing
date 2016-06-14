@@ -1,8 +1,9 @@
-import componentHelper from '../../helpers/componentHelper';
+import attributeHelper from '../../helpers/attributeHelper';
 
-module.exports = function (element) {      
-  var image = element.attr('image');
+module.exports = function (element) {
+  var image = attributeHelper.getAttribute(element, 'image');
   
+  // &nbsp; after img required for Outlook 03 to display image at correct size
   return `
     <container>
       <row class="collapse collapse-bottom">

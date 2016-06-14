@@ -1,10 +1,12 @@
+import attributeHelper from '../../helpers/attributeHelper';
+
 module.exports = function (element) {      
-  var image = element.attr('image');
-  var title = element.attr('title');
-  var text = element.attr('text');
-  var keyword = element.attr('keyword');
-  var buttonText = element.attr('button-text');
-  var discountHref = element.attr('discount-href');
+  var image = attributeHelper.getAttribute(element, 'image');
+  var title = attributeHelper.getAttribute(element, 'title');
+  var text = attributeHelper.getAttribute(element, 'text');
+  var keyword = attributeHelper.getAttribute(element, 'keyword');
+  var buttonText = attributeHelper.getAttribute(element, 'button-text');
+  var discountHref = attributeHelper.getAttribute(element, 'discount-href');
   
   return `
     <container>

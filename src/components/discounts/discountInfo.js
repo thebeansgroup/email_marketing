@@ -1,9 +1,11 @@
+import attributeHelper from '../../helpers/attributeHelper';
+
 module.exports = function (element) {  
-  var title = element.attr('title');
-  var text = element.attr('text');
-  var keyword = element.attr('keyword');
-  var buttonText = element.attr('button-text');
-  var buttonHref = element.attr('button-href');
+  var title = attributeHelper.getAttribute(element, 'title');
+  var text = attributeHelper.getAttribute(element, 'text');
+  var keyword = attributeHelper.getAttribute(element, 'keyword');
+  var buttonText = attributeHelper.getAttribute(element, 'button-text');
+  var buttonHref = attributeHelper.getAttribute(element, 'button-href');
   
   return `
     <div class="discount-info__text-container">

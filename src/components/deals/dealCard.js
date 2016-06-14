@@ -1,10 +1,15 @@
+import attributeHelper from '../../helpers/attributeHelper';
+
 module.exports = function (element) {      
-  var image = element.attr('image');
-  var dealHref = element.attr('deal-href');
-  var buttonText = element.attr('button-text');
-  var title = element.attr('title');
-  var subtitle = element.attr('subtitle');
+  var image = attributeHelper.getAttribute(element, 'image');
+  var dealHref = attributeHelper.getAttribute(element, 'deal-href');
+  var buttonText = attributeHelper.getAttribute(element, 'button-text');
+  var title = attributeHelper.getAttribute(element, 'title');
+  var subtitle = attributeHelper.getAttribute(element, 'subtitle');
   
+  // &nbsp; before img required for Outlook 03 to display image at correct size
+  // <br/>s required for Outlook 07, 10, 13 
+  // to give at least SOME vertical spacing since padding isnt supported
   return `
     <container>
       <row>

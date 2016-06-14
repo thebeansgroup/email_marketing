@@ -1,22 +1,24 @@
+import attributeHelper from '../../helpers/attributeHelper';
+
 module.exports = function (element) {
-  var logo = element.attr('logo');
-  var text = element.attr('text');
-  var unsubscribeHref = element.attr('unsubscribe-href');
-  var unsubscribeText = element.attr('unsubscribe-text');
-  var managePrefsText = element.attr('manage-prefs-text');
-  var managePrefsHref = element.attr('manage-prefs-href');
-  var privacyText = element.attr('privacy-text');
-  var privacyLinkText = element.attr('privacy-link-text');
-  var privacyLinkHref = element.attr('privacy-link-href');  
-  var twitterImage = element.attr('twitter-image');
-  var twitterHref = element.attr('twitter-href');
-  var facebookImage = element.attr('facebook-image');
-  var facebookHref = element.attr('facebook-href');
-  var address = element.attr('address');
-  var image1 = element.attr('image-1');
-  var image2 = element.attr('image-2');
-  var href1 = element.attr('href-1');
-  var href2 = element.attr('href-2');
+  var logo = attributeHelper.getAttribute(element, 'logo');
+  var text = attributeHelper.getAttribute(element, 'text');
+  var unsubscribeHref = attributeHelper.getAttribute(element, 'unsubscribe-href');
+  var unsubscribeText = attributeHelper.getAttribute(element, 'unsubscribe-text');
+  var managePrefsText = attributeHelper.getAttribute(element, 'manage-prefs-text');
+  var managePrefsHref = attributeHelper.getAttribute(element, 'manage-prefs-href');
+  var privacyText = attributeHelper.getAttribute(element, 'privacy-text');
+  var privacyLinkText = attributeHelper.getAttribute(element, 'privacy-link-text');
+  var privacyLinkHref = attributeHelper.getAttribute(element, 'privacy-link-href');  
+  var twitterImage = attributeHelper.getAttribute(element, 'twitter-image');
+  var twitterHref = attributeHelper.getAttribute(element, 'twitter-href');
+  var facebookImage = attributeHelper.getAttribute(element, 'facebook-image');
+  var facebookHref = attributeHelper.getAttribute(element, 'facebook-href');
+  var address = attributeHelper.getAttribute(element, 'address');
+  var image1 = attributeHelper.getAttribute(element, 'image-1');
+  var image2 = attributeHelper.getAttribute(element, 'image-2');
+  var href1 = attributeHelper.getAttribute(element, 'href-1');
+  var href2 = attributeHelper.getAttribute(element, 'href-2');
   
   return `
     <footer
