@@ -5,17 +5,3 @@
 .discount-image-block__text {
   @include tbg-text;
 }
-
-.discount-image-block--mirrored__image.small-12.large-6.columns {
-  float: right;
-  width: 250px;
-  padding-right: 16px;
-  padding-left: 8px;
-}
-
-.discount-image-block--mirrored__info.small-12.large-6.columns {
-  float: left;
-  width: 250px;
-  padding-right: 8px;
-  padding-left: 16px;
-}

@@ -29,7 +29,6 @@ import brandsBlockJS from './src/components/brands/brandsBlock';
 //Discounts
 import discountInfoJS from './src/components/discounts/discountInfo';
 import discountImageBlockJS from './src/components/discounts/discountImageBlock';
-import discountImageBlockMirroredJS from './src/components/discounts/discountImageBlockMirrored';
 
 module.exports = {
   tbgbutton: {
@@ -82,9 +81,6 @@ module.exports = {
   },
   discountimageblock: {
     js: discountImageBlockJS
-  },
-  discountimageblockmirrored: {
-    js: discountImageBlockMirroredJS
   },
   discountcardbutton: {
     js: discountCardButtonJS
