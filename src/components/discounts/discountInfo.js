@@ -18,10 +18,10 @@ module.exports = function (element) {
       <columns small="1" large="1">
       </columns>
       <columns small="10" large="10">
-        <lockedofferbutton
+        <offerbutton
           text="${buttonText}"
           href="${buttonHref}"
-        ></lockedofferbutton> 
+        ></offerbutton> 
       </columns>
       <columns small="1" large="1">
       </columns>  

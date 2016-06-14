@@ -8,7 +8,7 @@ import simpleFooterJS from './src/components/footer/simpleFooter';
 
 //Buttons
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
-import lockedOfferButtonJS from './src/components/buttons/lockedOfferButton';
+import offerButtonJS from './src/components/buttons/offerButton';
 import dealCardButtonJS from './src/components/buttons/dealCardButton';
 import smallDealCardButtonJS from './src/components/buttons/smallDealCardButton';
 import discountCardButtonJS from './src/components/buttons/discountCardButton';
@@ -42,8 +42,8 @@ module.exports = {
   tbgbutton: {
     js: tbgbuttonJS
   },
-  lockedofferbutton: {
-    js: lockedOfferButtonJS
+  offerbutton: {
+    js: offerButtonJS
   },
   dealcardbutton: {
     js: dealCardButtonJS

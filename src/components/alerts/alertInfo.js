@@ -26,10 +26,10 @@ module.exports = function (element) {
         <br/>
         <br/>
         <div class="alert-info__button-container">
-          <lockedofferbutton
+          <offerbutton
             text="${buttonText}"
             href="${buttonHref}"
-          ></lockedofferbutton>
+          ></offerbutton>
         </div>
       </div>
     </columns>

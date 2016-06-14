@@ -27,10 +27,6 @@
       background: $hover-background-color;
       border: 3px solid $hover-border-color;
     }
-
-    &.#{$prefix}__icon {
-      display: inline-block;
-    }
   }
 
   // Outlook fix https://github.com/zurb/foundation-emails/issues/415

@@ -4,18 +4,11 @@ module.exports = function (element) {
   var classPrefix = element.attr('class-prefix');
   var expander = '';
   var inner = element.attr('text');
-  
-  var padlock = ``;
-  var padlockSrc = "http://cdn.ymaservices.com/email/global/deals__padlock.jpg"
-  if (element.attr('padlock') == "true") {
-    padlock = `<img class="btn ${classPrefix}__icon" src="${padlockSrc}">&nbsp;&nbsp;`;
-  } 
 
   // If we have the href attribute we can create an anchor for the inner of the button;
   if (element.attr('href')) {
     inner = `
       <a class="btn ${classPrefix}__text" href="${element.attr('href')}">
-        ${padlock}
         ${inner}
       </a>
     `;
