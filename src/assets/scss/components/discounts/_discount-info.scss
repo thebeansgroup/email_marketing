@@ -6,12 +6,12 @@ $discount-info-keyword-colour: #f33;
 
 .discount-info__keyword {
   @include tbg-title;
+  padding-top: 1em;
   color: $discount-info-keyword-colour;
 }
 
 .discount-info__text {
   @include tbg-text;
-  padding: 0 1em;
 }
 
 .discount-info__text-container {
@@ -20,5 +20,5 @@ $discount-info-keyword-colour: #f33;
 }
 
 .discount-info__button-container {
-  padding: 0em 3em;
+  padding: 0em 2em;
 }

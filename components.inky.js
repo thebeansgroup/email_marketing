@@ -10,21 +10,16 @@ import simpleFooterJS from './src/components/footer/simpleFooter';
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
 import offerButtonJS from './src/components/buttons/offerButton';
 import dealCardButtonJS from './src/components/buttons/dealCardButton';
-import discountCardButtonJS from './src/components/buttons/discountCardButton';
 
 //Alerts 
 import alertInfoJS from './src/components/alerts/alertInfo';
 import alertBlockJS from './src/components/alerts/alertBlock';
-import verticalAlertBlockJS from './src/components/alerts/verticalAlertBlock';
 
 //Deals
 import dealsHeaderImageJS from './src/components/deals/dealsHeaderImage';
 import dealCardJS from './src/components/deals/dealCard';
 import inlineDealCardJS from './src/components/deals/inlineDealCard';
 import inlineDealCardRowJS from './src/components/deals/inlineDealCardRow';
-
-//Brands
-import brandsBlockJS from './src/components/brands/brandsBlock';
 
 //Discounts
 import discountInfoJS from './src/components/discounts/discountInfo';
@@ -58,9 +53,6 @@ module.exports = {
   alertblock: {
     js: alertBlockJS
   },
-  verticalalertblock: {
-    js: verticalAlertBlockJS
-  },
   dealsheaderimage: {
     js: dealsHeaderImageJS
   },
@@ -73,16 +65,10 @@ module.exports = {
   inlinedealcardrow: {
     js: inlineDealCardRowJS
   },
-  brandsblock: {
-    js: brandsBlockJS
-  },
   discountinfo: {
     js: discountInfoJS
   },
   discountimageblock: {
     js: discountImageBlockJS
-  },
-  discountcardbutton: {
-    js: discountCardButtonJS
   },
 };

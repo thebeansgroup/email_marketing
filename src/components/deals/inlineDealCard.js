@@ -8,8 +8,8 @@ module.exports = function (element) {
   
   return `
     <a href="${dealHref}">
-      <img width="266" height="133" src="${image}">
-      <h6 class="deal-card__title--inline">
+      <img class="deal-card__image" width="266" height="133" src="${image}">
+      <h6 class="deal-card__title">
         ${title}
       </h6>
       <p class="deal-card__text">

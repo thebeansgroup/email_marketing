@@ -10,20 +10,22 @@ module.exports = function (element) {
   return `
     <container class="${componentHelper.getElementClasses(element)}">
       <row class="collapse collapse-bottom">
-        <columns class="alert-block__image" small="12" large="6">
+        <columns small="12" large="12">
           <a href="${buttonHref}">
-            <img height="300" width="300" src="${image}">
+            <img width="580" height="320" src="${image}">
+            &nbsp;
           </a>
         </columns>
-        <alertinfo
-          class="alert-block__info"
+      </row>
+      <row class="collapse">
+        <br/>
+        <alertinfo 
           title="${title}"
           text="${text}"
-          class-modifier="horizontal"
           button-text="${buttonText}"
           button-href="${buttonHref}"
           mobile-columns="12"
-          desktop-columns="6"
+          desktop-columns="12"
         ></alertinfo>
       </row>
     </container>

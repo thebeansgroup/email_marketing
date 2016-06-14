@@ -7,7 +7,6 @@ module.exports = function (element) {
   
   return `
     <div class="discount-info__text-container">
-      <br/>
       <h6 class="discount-info__keyword text-center">
         ${keyword}
       </h6>

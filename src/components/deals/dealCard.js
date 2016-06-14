@@ -11,8 +11,8 @@ module.exports = function (element) {
         <columns small="12" large="12">
           <br/>
           <a href="${dealHref}">
-            <img width="548" height="274" src="${image}">
             &nbsp;
+            <img class="deal-card__image " width="548" height="274" src="${image}">
           </a>
           <row class="collapse">
             <columns small="6" large="6">

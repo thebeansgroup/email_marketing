@@ -4,9 +4,8 @@ $deal-card-keyword-colour: #f33;
   @include tbg-title;
 }
 
-.deal-card__title--inline {
-  @include tbg-title;
-  padding-top: 0.5em;
+.deal-card__image {
+  padding-bottom: 0.5em;
 }
 
 .deal-card__text {

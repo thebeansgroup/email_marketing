@@ -1,9 +1,4 @@
-.alert-info__title--horizontal {
-  @include tbg-title;
-  padding-top: 2em;
-}
-
-.alert-info__title--vertical {
+.alert-info__title {
   @include tbg-title;
 }
 
