@@ -16,13 +16,13 @@ module.exports = function (element) {
   var facebookImage = attributeHelper.getAttribute(element, 'facebook-image');
   var facebookHref = attributeHelper.getAttribute(element, 'facebook-href');
   var address = attributeHelper.getAttribute(element, 'address');
-  var image1 = attributeHelper.getAttribute(element, 'image-1');
-  var image2 = attributeHelper.getAttribute(element, 'image-2');
-  var href1 = attributeHelper.getAttribute(element, 'href-1');
-  var href2 = attributeHelper.getAttribute(element, 'href-2');
   
   var imageSection = ``;
   if (attributeHelper.getAttribute(element, 'images') == "true") {
+    var image1 = attributeHelper.getAttribute(element, 'image-1');
+    var image2 = attributeHelper.getAttribute(element, 'image-2');
+    var href1 = attributeHelper.getAttribute(element, 'href-1');
+    var href2 = attributeHelper.getAttribute(element, 'href-2');
     imageSection = `
       <row class="collapse">
         <columns small="12" large="6">
