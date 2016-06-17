@@ -1,0 +1,24 @@
+.discount-info__title {
+  @include tbg-title;
+}
+
+.discount-info__keyword {
+  @include tbg-title;
+  padding-top: 1em;
+  color: $tbg-keyword-colour;
+}
+
+.discount-info__text {
+  @include tbg-text;
+}
+
+.discount-info__button-container {
+  padding: 0em 2em;
+}
+
+// Required to give at least SOME 'padding' so elements aren't touching the edge
+// Since padding doesn't work in Outlook 07, 10, 13
+.discount-info__text-container {
+  border-right: 10px solid $tbg-secondary-text-color;
+  border-left: 10px solid $tbg-secondary-text-color;
+}

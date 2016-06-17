@@ -16,8 +16,16 @@
 // 1. Global
 // ---------
 
+$tbg-global-background-color: #f3f3f3;
+$tbg-meta-text-color: #b2b2af;
+$tbg-primary-text-color: #000;
+$tbg-alternative-text-color: #777;
+$tbg-secondary-text-color: #fff;
+$tbg-keyword-colour: #f33;
+$tbg-meta-font-size: 11px;
+
 $primary-color: #2199e8;
-$secondary-color: #777777;
+$secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
@@ -143,5 +151,3 @@ $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
-
-

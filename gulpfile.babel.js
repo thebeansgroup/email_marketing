@@ -15,6 +15,9 @@ import colors   from 'colors';
 
 const $ = plugins();
 
+var Inky = require('inky').Inky;
+var components = require('./components.inky.js');
+
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
 
@@ -53,7 +56,9 @@ function pages() {
       partials: 'src/partials',
       helpers: 'src/helpers'
     }))
-    .pipe(inky())
+    .pipe(inky({
+      components: Inky.createCustomComponents(components)
+    }))
     .pipe(gulp.dest('dist'));
 }
 
@@ -205,5 +210,3 @@ function zip() {
 
   return merge(moveTasks);
 }
-
-

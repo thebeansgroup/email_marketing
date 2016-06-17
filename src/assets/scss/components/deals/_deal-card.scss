@@ -1,0 +1,17 @@
+.deal-card__title {
+  @include tbg-title;
+}
+
+.deal-card__image {
+  padding-bottom: 0.5em;
+}
+
+.deal-card__text {
+  @include tbg-text;
+}
+
+.deal-card__keyword {
+  @include tbg-text;
+  font-weight: bold;
+  color: $tbg-keyword-colour;
+}
