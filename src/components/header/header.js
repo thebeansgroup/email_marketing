@@ -20,7 +20,7 @@ module.exports = function (element) {
             <span class="show-for-large">
               ${text}
             </span>
-            <a style="padding-left:10px;" href="${linkHref}"> 
+            <a href="${linkHref}"> 
               ${linkText}
             </a>
             <span class="show-for-large">
