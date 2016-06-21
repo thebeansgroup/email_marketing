@@ -25,12 +25,12 @@ module.exports = function (element) {
     var href2 = attributeHelper.getAttribute(element, 'href-2');
     imageSection = `
       <row class="collapse">
-        <columns small="12" large="6">
+        <columns class="show-for-large" small="12" large="6">
           <a href="${href1}">
             <img width="290" height="145" src="${image1}">
           </a>
         </columns>
-        <columns class="show-for-large" small="6" large="6">
+        <columns small="6" large="6">
           <a href="${href2}">
             <img width="290" height="145" src="${image2}">
           </a>

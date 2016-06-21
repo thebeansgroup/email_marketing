@@ -6,6 +6,8 @@ module.exports = function (element) {
   var text = attributeHelper.getAttribute(element, 'text');
   var linkText = attributeHelper.getAttribute(element, 'link-text');
   var linkHref = attributeHelper.getAttribute(element, 'link-href');
+  var unsubscribeLinkText = attributeHelper.getAttribute(element, 'unsubscribe-link-text');
+  var unsubscribeLinkHref = attributeHelper.getAttribute(element, 'unsubscribe-link-href');
   
   return `
     <container class="${componentHelper.getElementClasses(element)} header header__container">
@@ -20,6 +22,12 @@ module.exports = function (element) {
             </span>
             <a href="${linkHref}"> 
               ${linkText}
+            </a>
+            <span class="show-for-large">
+              |
+            </span>
+            <a class="show-for-large" href="${unsubscribeLinkHref}"> 
+              ${unsubscribeLinkText}
             </a>
           </p>
         </columns>
