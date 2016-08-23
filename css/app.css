@@ -1389,6 +1389,58 @@ body.outlook p {
   color: #b2b2af;
   text-align: center; }
 
+.app-footer.app-footer__container {
+  background-color: #48b5b9;
+  border: none; }
+
+.app-footer.app-footer__image__container {
+  background-color: #f3f3f3;
+  border: none; }
+
+.app-footer__image {
+  width: 580px;
+  height: 445px; }
+
+.app-footer__header {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #fff; }
+
+.app-footer__header--bold {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff; }
+
+.app-footer__list {
+  font-weight: lighter;
+  color: #fff; }
+
+.app-footer__list-item {
+  margin-bottom: 1em; }
+
+.app-footer__arrow-down {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 20px solid #fff;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent; }
+
+.app-footer__button {
+  display: inline-block;
+  width: 124px;
+  height: 36px;
+  cursor: pointer; }
+
 .deal-card__title {
   margin-bottom: 0;
   font-size: 18px;
