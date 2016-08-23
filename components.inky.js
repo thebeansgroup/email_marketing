@@ -5,13 +5,16 @@ import headerJS from './src/components/header/header';
 import footerJS from './src/components/footer/footer';
 import imageFooterJS from './src/components/footer/imageFooter';
 import simpleFooterJS from './src/components/footer/simpleFooter';
+import appFooterJS from './src/components/footer/appFooter';
+import unbrandedAppFooterJS from './src/components/footer/unbrandedAppFooter';
+import brandedAppFooterJS from './src/components/footer/brandedAppFooter';
 
 //Buttons
 import tbgbuttonJS from './src/components/buttons/tbgbutton';
 import offerButtonJS from './src/components/buttons/offerButton';
 import dealCardButtonJS from './src/components/buttons/dealCardButton';
 
-//Alerts 
+//Alerts
 import alertInfoJS from './src/components/alerts/alertInfo';
 import alertBlockJS from './src/components/alerts/alertBlock';
 
@@ -46,6 +49,15 @@ module.exports = {
   },
   imagefooter: {
     js: imageFooterJS
+  },
+  appfooter: {
+    js: appFooterJS
+  },
+  unbrandedappfooter: {
+    js: unbrandedAppFooterJS
+  },
+  brandedappfooter: {
+    js: brandedAppFooterJS
   },
   alertinfo: {
     js: alertInfoJS

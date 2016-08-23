@@ -1,0 +1,54 @@
+.app-footer.app-footer__container {
+  background-color: $tbg-teal-color;
+  border: none;
+}
+
+.app-footer.app-footer__image__container {
+  background-color: $tbg-global-background-color;
+  border: none;
+}
+
+.app-footer__image {
+  width: 580px;
+  height: 445px;
+}
+
+.app-footer__header {
+  @include tbg-title;
+  font-size: 24px;
+  font-weight: lighter;
+  color: $tbg-secondary-text-color;
+}
+
+.app-footer__header--bold {
+  @include tbg-title;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  color: $tbg-secondary-text-color;
+}
+
+.app-footer__list {
+  font-weight: lighter;
+  color: $tbg-secondary-text-color;
+}
+
+.app-footer__list-item {
+  margin-bottom: 1em;
+}
+
+.app-footer__arrow-down {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 20px solid $tbg-secondary-text-color;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+
+.app-footer__button {
+  display: inline-block;
+  width: 124px;
+  height: 36px;
+  cursor: pointer;
+}
